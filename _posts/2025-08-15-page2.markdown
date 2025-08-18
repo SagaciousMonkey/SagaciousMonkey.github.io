@@ -1,0 +1,8 @@
+---
+layout: post
+title: "Post TWO!"
+date: 2025-08-15 15:45:04 -0400
+categories: jekyll update
+---
+
+It's a second post! Wow!
