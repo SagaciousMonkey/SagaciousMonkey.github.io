@@ -3,13 +3,84 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="theme-base-08">
 
     {% include sidebar.html %}
 
     <div class="content container">
       {{ content }}
     </div>
+
+    <style>
+      .sidebar-about h1 a {
+        display: block;
+        line-height: 1.2;
+        max-height: 2.4em; /* 2 lines at line-height 1.2 */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: opacity 0.3s ease, transform 0.3s ease, font-size 0.3s ease;
+      }
+      
+      .sidebar-about h1 a.changing {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+    </style>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const titleLink = document.querySelector('.sidebar-about h1 a');
+        
+        // Array of different texts to cycle through
+        const texts = [
+          "{{ site.title }}",
+          "Matthew Espinosa",
+          "Matthew John-Michael Espinosa",
+          "Matthew John-Michael Espinosa de los Monteros",
+          "Sagacious Monkey",
+          "Mattesp",
+          "Peachy",
+        ];
+        
+        let currentIndex = 0;
+        const baseFontSize = 2; // Base size in rem (adjust to match your CSS)
+        
+        titleLink.addEventListener('click', function(e) {
+          e.preventDefault(); // Prevent navigation
+          
+          // Fade out
+          this.classList.add('changing');
+          
+          setTimeout(() => {
+            // Change content while faded out
+            currentIndex = (currentIndex + 1) % texts.length;
+            this.textContent = texts[currentIndex];
+            
+            // Adjust font size based on text length
+            const textLength = texts[currentIndex].length;
+            let fontSize = baseFontSize;
+            
+            if (textLength > 35) {
+              fontSize = baseFontSize * 0.5;
+            } else if (textLength > 25) {
+              fontSize = baseFontSize * 0.6;
+            } else if (textLength > 20) {
+              fontSize = baseFontSize * 0.7;
+            } else if (textLength > 15) {
+              fontSize = baseFontSize * 0.85;
+            }
+            
+            this.style.fontSize = fontSize + 'rem';
+            
+            // Fade back in
+            this.classList.remove('changing');
+          }, 300); // Match the transition duration
+          
+          // Optional: Navigate after showing the text
+          // setTimeout(() => { window.location.href = this.href; }, 1000);
+        });
+      });
+    </script>
 
   </body>
 </html>
