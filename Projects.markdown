@@ -515,7 +515,6 @@ permalink: /projects
 <div class="portfolio-section">
   <div class="portfolio-inner">
     <div class="portfolio-grid">
-
       <!-- Card 1: Egyptian Tomb Redesigned -->
       <article class="port-card" id="card-quest">
         <div class="port-media">

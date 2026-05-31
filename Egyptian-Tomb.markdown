@@ -1,7 +1,6 @@
 ---
 layout: nocss
 category: "Egyptian Tomb Redux" # Change per page
-hero: "/assets/video/ET_ArkArt.MP4" # Path to your hero image
 permalink: /projects/etr
 ---
 
@@ -86,17 +85,25 @@ permalink: /projects/etr
     margin-bottom: 0;
   }
 
-  .dd-hero-img {
-    width: 30%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 100px;
-    display: block;
-    margin: 0;
-    border-radius: 0;
-    filter: brightness(0.55) saturate(0.7);
-    transition: filter 0.6s ease;
-  }
+.dd-hero-strip {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.dd-hero-panel {
+  flex: 1;
+  height: 100%;
+  background-size: cover;
+  background-position: center top;
+  filter: brightness(0.55) saturate(0.7);
+  border-right: 1px solid var(--border);
+}
+
+.dd-hero-panel:last-child {
+  border-right: none;
+}
 
   /* Gradient fade at the bottom so the title reads cleanly */
   .dd-hero::after {
@@ -114,7 +121,7 @@ permalink: /projects/etr
 
   .dd-hero-text {
     position: absolute;
-    bottom: 2.5rem;
+    bottom: 5rem;
     left: 2rem;
     right: 2rem;
     z-index: 2;
@@ -122,15 +129,15 @@ permalink: /projects/etr
 
   @media (min-width: 48em) {
     .dd-hero-text {
-      left: 22rem;
-      right: 3rem;
+      left: 13rem;
+      right: 1rem;
     }
   }
 
   @media (min-width: 64em) {
     .dd-hero-text {
-      left: 24rem;
-      right: 5rem;
+      left: 14rem;
+      right: 1rem;
     }
   }
 
@@ -232,7 +239,7 @@ permalink: /projects/etr
     font-size: 0.65rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--muted);
+    color: var(--accent);
     padding: 0.65rem 0.85rem;
     border-top: 1px solid var(--border);
     background: var(--surface);
@@ -446,55 +453,54 @@ permalink: /projects/etr
 ════════════════════════════════════════════ -->
 <div class="deepdive">
 
-  <div class="dd-hero">
-    <!-- Replace with your hero image -->
-    <!-- For a video hero instead: -->
-    <img class="dd-hero-img" src="/assets/img/gobleki.JPEG" autoplay muted playsinline></img>
-    <div class="dd-hero-text">
-      <a class="dd-back" href="/projects">Back to Projects</a>
-      <h1 class="dd-hero-title">Egyptian Tomb Redesigned</h1>
-    </div>
+<div class="dd-hero">
+  <div class="dd-hero-strip">
+    <div class="dd-hero-panel" style="background-image: url('/assets/img/ETPanel1.png')"></div>
+    <div class="dd-hero-panel" style="background-image: url('/assets/img/ETPanel2.JPEG')"></div>
+    <div class="dd-hero-panel" style="background-image: url('/assets/img/gobleki.JPEG')"></div>
+    <div class="dd-hero-panel" style="background-image: url('/assets/img/ETSun.JPEG')"></div>
+    <div class="dd-hero-panel" style="background-image: url('/assets/img/ETPanel5.jpg')"></div>
   </div>
-
+  <div class="dd-hero-text">
+    <a class="dd-back" href="/projects">Back to Projects</a>
+    <h1 class="dd-hero-title">Egyptian Tomb Redesigned</h1>
+  </div>
+</div>
   <!-- ═══════════════════════════════════════════
        BODY CONTENT
   ════════════════════════════════════════════ -->
   <div class="deepdive-inner">
-
     <!-- ════════════════════════════════════════
          MEDIA BLOCK 1 — image left, text right
     ════════════════════════════════════════ -->
     <div class="dd-media-block">
       <div class="dd-media-block-media">
-        <!-- Replace with your image or video -->
-        <!-- <img src="/assets/img/.jpg" alt="Description of image" /> -->
-        <video src="/assets/video/ET_ArkArt.MP4" autoplay muted playsinline></video>
-        <span class="dd-caption">Originally, the inside of the ark said: "The Riddle of the Sphinx," but... had nothing to do with a man walking on three legs.</span>
+        <video src="/assets/video/ET_ArkArt.mp4" autoplay muted playsinline></video>
+        <span class="dd-caption">Originally, the inside of the ark said "The Riddle of the Sphinx," but... had nothing to do with a man walking on three legs.</span>
       </div>
       <div class="dd-media-block-text">
         <h3>Historical Research, Environment, Prop, and Puzzle Design</h3>
         <br>
         <p>
         When Egyptian Tomb was first constructed, it was designed to excite players immediately as they entered. Atmospheric lighting with flickering electric torches, large altars with ornate hieroglyphic carvings, and three inches of sand along the floor all worked to hook players into an immersive experience.</p>
+        <br>
         <p>In time, however, game masters began to realize a strange recurring pattern that players took in the room. When players reached the third room, they often would lose track and go back to the first and second rooms, where most of the budget had gone. Even though the third area contained all the answers to its puzzles, requiring no backtracking, game masters would give many hints to keep players’ attention focused. It became clear that the third room lacked something to keep players engaged.</p>
       </div>
     </div>
-
     <!-- ════════════════════════════════════════
          MEDIA BLOCK 2 — text left, image right (.flip)
     ════════════════════════════════════════ -->
     <div class="dd-media-block flip">
       <div class="dd-media-block-media">
-        <div class="dd-placeholder">Image / Video</div>
-        <!-- <img src="/assets/img/quest-02.jpg" alt="Description of image" /> -->
-        <span class="dd-caption">Caption describing what the viewer is looking at</span>
+        <img src="/assets/img/ETDesignBoard.JPEG" alt="Photo of design notes on whiteboard">
+        <span class="dd-caption">My design process was collaborative; I would openly display my notes and thoughts and take input from our game masters</span>
       </div>
       <div class="dd-media-block-text">
         <p>In the original design, the third area contained a rotating pillar and a prop resembling Hollywood’s Ark of the Covenant. The Ark was meant to hold gravitas on its own merit, so very little else was installed in the third room. This, however, meant the room was barren- sparse wall decoration, less sand on the ground, and a lack of puzzles meant players would often return to the previous two areas.</p>
-          <p>The Egyptian Tomb Redesign focused almost entirely on the third room. We edited the puzzles to be clearer, and we installed new tactile props with new puzzles. We repainted the walls a brilliant gold, and we coated them in ancient art, using icons from Sumerian cities, Goebekli Tepe, and other ancient locations. I took this opportunity to develop why the Ark of the Covenant would be found in an Egyptian Tomb- deciding that the Pharaoh who built the tomb was obsessed with collecting exotic art and materials.</p>
+        <br>
+        <p>The Egyptian Tomb Redesign focused almost entirely on the third room. We edited the puzzles to be clearer, and we installed new tactile props with new puzzles. We repainted the walls a brilliant gold, and we coated them in ancient art, using icons from Sumerian cities, Göbekli Tepe, and other ancient locations. I took this opportunity to develop why the Ark of the Covenant would be found in an Egyptian Tomb- deciding that the Pharaoh who built the tomb was obsessed with collecting exotic art and materials.</p>
       </div>
     </div>
-
     <!-- ════════════════════════════════════════
          PULL QUOTE
     ════════════════════════════════════════ -->
@@ -506,33 +512,27 @@ permalink: /projects/etr
         <cite>— Kayla Steele, Google Review</cite>
       </blockquote>
     </div>
-
     <!-- ════════════════════════════════════════
          MEDIA BLOCK 3 — image left, text right
     ════════════════════════════════════════ -->
     <div class="dd-media-block">
       <div class="dd-media-block-media">
-        <!-- Replace with your image or video -->
-        <div class="dd-placeholder">Image / Video</div>
-        <!-- <img src="/assets/img/quest-01.jpg" alt="Description of image" /> -->
-        <!-- <video src="/assets/video/quest-01.mp4" autoplay muted loop playsinline></video> -->
-        <span class="dd-caption">Caption describing what the viewer is looking at</span>
+        <img src="/assets/img/ETScroll.JPEG" alt="A scroll, translated into English after a short puzzle.">
+        <span class="dd-caption">The names are all that is needed, but the text below push the theme of the puzzle... the voyage of the solar barque.</span>
       </div>
       <div class="dd-media-block-text">
         <p>
-        To further the themes of exotic cultures in the Tomb, I developed a scroll that carried that necessary information for the game’s final puzzle. It was written in a script resembling Ottoman-Turkish, suggesting how other explorers from the 1800s (perhaps from the Egyptian-Ottoman War) attempted and failed to solve the puzzle they were about to attempt.</p>
+        To further the themes of exotic cultures in the Tomb, I developed a scroll that carried that necessary information for the game’s final puzzle. It was written in a script resembling Ottoman-Turkish, suggesting how other explorers from the 1800s (perhaps from the Egyptian-Ottoman War) attempted and failed to solve the puzzle they were about to attempt. Players found scraps of an English translation another explorer left behind.</p>
         <p>Immediately, we noticed the results. Game masters did not need to give as many hints, and we had an increase in the room’s victory rate- even after adding more complex puzzles to the room. For the first time, we had players requesting their victory photo be taken in the final area instead of the entrance. I cherish my time designing escape rooms because I got to immediately see the results of my work through the enjoyment of our customers. </p>
-
       </div>
     </div>
-
     <!-- ════════════════════════════════════════
          MEDIA BLOCK 2 — text left, image right (.flip)
-    ════════════════════════════════════════ -->
+    ════════════════════════════════════════
     <div class="dd-media-block flip">
       <div class="dd-media-block-media">
         <div class="dd-placeholder">Image / Video</div>
-        <!-- <img src="/assets/img/quest-02.jpg" alt="Description of image" /> -->
+        <img src="/assets/img/quest-02.jpg" alt="Description of image" />
         <span class="dd-caption">Caption describing what the viewer is looking at</span>
       </div>
       <div class="dd-media-block-text">
@@ -542,7 +542,7 @@ permalink: /projects/etr
         <li>Added props written in Sumerian and Ottoman Turkish, notes from previous explorers and art taken by ancient pharoahs</li></ul>
       </div>
     </div>
-
+-->
     <!-- ════════════════════════════════════════
          PULL QUOTE
     ════════════════════════════════════════ -->

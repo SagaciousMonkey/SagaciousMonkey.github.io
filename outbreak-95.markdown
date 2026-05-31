@@ -1,7 +1,6 @@
 ---
 layout: nocss
 category: "Outbreak '95" # Change per page
-hero: "/assets/video/ET_ArkArt.MP4" # Path to your hero image
 permalink: /projects/ob95
 ---
 
@@ -86,17 +85,25 @@ permalink: /projects/ob95
     margin-bottom: 0;
   }
 
-  .dd-hero-img {
-    width: 30%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 100px;
-    display: block;
-    margin: 0;
-    border-radius: 0;
-    filter: brightness(0.55) saturate(0.7);
-    transition: filter 0.6s ease;
-  }
+.dd-hero-strip {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.dd-hero-panel {
+  flex: 1;
+  height: 100%;
+  background-size: cover;
+  background-position: center top;
+  filter: brightness(0.55) saturate(0.7);
+  border-right: 1px solid var(--border);
+}
+
+.dd-hero-panel:last-child {
+  border-right: none;
+}
 
   /* Gradient fade at the bottom so the title reads cleanly */
   .dd-hero::after {
@@ -114,7 +121,7 @@ permalink: /projects/ob95
 
   .dd-hero-text {
     position: absolute;
-    bottom: 2.5rem;
+    bottom: 5rem;
     left: 2rem;
     right: 2rem;
     z-index: 2;
@@ -122,15 +129,15 @@ permalink: /projects/ob95
 
   @media (min-width: 48em) {
     .dd-hero-text {
-      left: 22rem;
-      right: 3rem;
+      left: 13rem;
+      right: 1rem;
     }
   }
 
   @media (min-width: 64em) {
     .dd-hero-text {
-      left: 24rem;
-      right: 5rem;
+      left: 14rem;
+      right: 1rem;
     }
   }
 
@@ -232,7 +239,7 @@ permalink: /projects/ob95
     font-size: 0.65rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--muted);
+    color: var(--accent);
     padding: 0.65rem 0.85rem;
     border-top: 1px solid var(--border);
     background: var(--surface);
@@ -446,16 +453,19 @@ permalink: /projects/ob95
 ════════════════════════════════════════════ -->
 <div class="deepdive">
 
-  <div class="dd-hero">
-    <!-- Replace with your hero image -->
-    <!-- For a video hero instead: -->
-    <img class="dd-hero-img" src="/assets/img/gobleki.JPEG" autoplay muted playsinline></img>
-    <div class="dd-hero-text">
-      <a class="dd-back" href="/projects">Back to Projects</a>
-      <h1 class="dd-hero-title">Outbreak '95</h1>
-    </div>
+<div class="dd-hero">
+  <div class="dd-hero-strip">
+    <div class="dd-hero-panel" style="background-image: url('/assets/img/OBVirus.JPEG')"></div>
+    <div class="dd-hero-panel" style="background-image: url('/assets/img/OBGBCode.JPEG')"></div>
+    <div class="dd-hero-panel" style="background-image: url('/assets/img/OBGBRom.png')"></div>
+    <div class="dd-hero-panel" style="background-image: url('/assets/img/OBGB.png')"></div>
+    <div class="dd-hero-panel" style="background-image: url('/assets/img/OBEliza.JPEG')"></div>
   </div>
-
+  <div class="dd-hero-text">
+    <a class="dd-back" href="/projects">Back to Projects</a>
+    <h1 class="dd-hero-title">Outbreak '95</h1>
+  </div>
+</div>
   <!-- ═══════════════════════════════════════════
        BODY CONTENT
   ════════════════════════════════════════════ -->
@@ -465,34 +475,30 @@ permalink: /projects/ob95
     ════════════════════════════════════════ -->
     <div class="dd-media-block">
       <div class="dd-media-block-media">
-        <!-- Replace with your image or video -->
-        <!-- <img src="/assets/img/.jpg" alt="Description of image" /> -->
-        <video src="/assets/video/ET_ArkArt.MP4" autoplay muted playsinline></video>
-        <span class="dd-caption">Originally, the inside of the ark said: "The Riddle of the Sphinx," but... had nothing to do with a man walking on three legs.</span>
+        <video autoplay muted playsinline>
+          <source src="/assets/video/OBGBPlay.mp4" type="video/mp4">
+          </video>
+        <span class="dd-caption">Test playthough of the Gameboy game on a modern computer.</span>
       </div>
       <div class="dd-media-block-text">
         <h3>Narrative, Environment, Prop, and Puzzle Design</h3>
         <br>
-        <p>
-        Outbreak was an older room, designed to be a CDC facility that housed a cure for an apocalyptic virus. In its first iteration, it was designed to be a high difficulty game that appealed to experts, but decoration was a low priority. As it looked rather plain, marketing it was difficult, and it consistently underperformed. Since it clearly needed an exciting edge, I pitched a Halloween variant- “Zombie” Outbreak. We would fill the negative space with blood, update the lighting, change the room’s soundtrack and add props that gave the room a survival-horror element. The room consistently sold out, a complete reversal of its previous performance. The owners decided that this was what Outbreak needed- and made the theme permanent.</p>
+        <p>Outbreak was an older room, designed to be a CDC facility that housed a cure for an apocalyptic virus. It was a high difficulty game that appealed to experts, but lacked decoration. Marketing it was difficult, and it consistently underperformed. I pitched a Halloween variant- “Zombie” Outbreak. The negative space was covered with blood, the lighting was lowered, and the room’s soundtrack was replaced with a moody synthwave track. The room consistently sold out, a complete reversal of its previous performance.</p>
       </div>
     </div>
-
     <!-- ════════════════════════════════════════
          MEDIA BLOCK 2 — text left, image right (.flip)
     ════════════════════════════════════════ -->
     <div class="dd-media-block flip">
       <div class="dd-media-block-media">
-        <div class="dd-placeholder">Image / Video</div>
-        <!-- <img src="/assets/img/quest-02.jpg" alt="Description of image" /> -->
-        <span class="dd-caption">Caption describing what the viewer is looking at</span>
+        <img src="/assets/img/OBEliza2.JPEG" alt="Speaking to a computer in the room">
+        <span class="dd-caption">Eliza (named Barbara in-game) reacted to posters in the room and shot down any attempts at an easy hint.</span>
       </div>
       <div class="dd-media-block-text">
-        <p>Eventually the owners decided that it should be nostalgic, and suggested placing it in the Nineties. My Zombie Outbreak design already had references to Resident Evil and Army of Darkness, so it was a simple transition, though initially superficial. We needed new puzzles that evoked the technological surge of the nineties, and the team developed two new experiences that quickly became exciting new projects of their own- a Gameboy game running on original hardware and a PC that ran a Python variant of the classic Eliza chatbot.</p>
-        <p>The chatbot came first. Eliza was developed in the 60s, as a quasi-therapist that would find keywords in a user’s prompts and redirect them back. “I went for a jog today,” would return “A jog? Tell me about that,” as Eliza would find the noun and place it into one of her responses. Turning her into a security system for a CDC research lab required extensive scripting. I would spend any unbooked moment to dive into the Python file and add keywords that players could spot in the room- the script began with terms like “Zombie,” and “Virus,” and ended with exact terms from the puzzles, as well as references to the other characters who worked in the lab.</p>
+        <p>After two strong Halloweens, we decided to keep the room’s Zombie theme throughout the year. The name Outbreak ‘95 gave us a chance to add new elements that evoked the technological surge of the Nineties. Soon, we added a Gameboy game running on original hardware and a PC that ran a Python variant of the classic Eliza chatbot.</p>
+        <p>The chatbot came first. I spent days diving into the script and added keywords that players could spot in the room- the script began with terms like “Zombie,” and “Virus,” and ended with exact terms from the puzzles, as well as references to the other characters who worked in the lab. Noting what testers typed in gave me even more keywords for her to respond to. She hated foul language and ignored direct attempts for answers, but gave depth to the other props in the room. </p>
       </div>
     </div>
-
     <!-- ════════════════════════════════════════
          PULL QUOTE
     ════════════════════════════════════════ -->
@@ -504,38 +510,30 @@ permalink: /projects/ob95
         <cite>— Rich B, Google Review</cite>
       </blockquote>
     </div>
-
     <!-- ════════════════════════════════════════
          MEDIA BLOCK 3 — image left, text right
     ════════════════════════════════════════ -->
     <div class="dd-media-block">
       <div class="dd-media-block-media">
-        <!-- Replace with your image or video -->
-        <div class="dd-placeholder">Image / Video</div>
-        <!-- <img src="/assets/img/quest-01.jpg" alt="Description of image" /> -->
-        <!-- <video src="/assets/video/quest-01.mp4" autoplay muted loop playsinline></video> -->
-        <span class="dd-caption">Caption describing what the viewer is looking at</span>
+        <img src="/assets/img/OB_CDCCartridges.JPEG" alt="Different Gameboy Cartridges">
+        <span class="dd-caption">Ooh, the CDC released a limited edition transparent blue cartridge!</span>
       </div>
       <div class="dd-media-block-text">
-        <p>
-        Scripting the Gameboy game and the chatbot, I was able to honor the work of my previous manager, who had written a binder of journal entries from a character named Dr. Alan Williams. The journal contained a puzzle that made players read each of the dozen pages. This was removed for better game flow, but with the cut, we also lost a great deal of immersion- the characters in the lab were essentially removed with the binder. I realized that with Eliza, we could do two things- add more references to the characters, and reward players who asked about them with hints about other puzzles. “Eric” would return “Your partner, Dr. Eric Hill? A smart man… but prone to distraction. Why does he insist on taking notes with a video game cartridge? I don’t think a ‘secret code’ is an effective security measure, either…”</p>
-        <p>The Gameboy really hammered in the themes of technological overindulgence. It was a strange addition, but it was one that resonated with players. A previous attempt at a Nineties device, a cassette deck, was scrapped after players damaged it within hours- but with the Gameboy, there was an odd reverence. Players would pass it around, keep it on to hear the soundtrack, and read through Dr. Hill’s notes and journal entries. Like Eliza, Dr. Hill had a puzzle attached (the secret code, mentioned before), but he also would comment on other corners of the room. One of our earliest escapes had taken notes from Dr. Hill and Eliza, and had used their hints to help solve the other puzzles and riddles- the game master didn’t need to send a single hint to them.</p>
-
+        <p>I realized that with Eliza, we could do two things- add more references to the other characters in the game, and reward players who asked about them with hints about other puzzles. “Eric” would return “Your partner, Dr. Eric Hill? A smart man… but prone to distraction. Why does he insist on taking notes with a video game cartridge? I don’t think a ‘secret code’ is an effective security measure, either…”</p>
+        <p>The Gameboy was a strange addition, but it was one that resonated with players. A previous attempt at a Nineties device, a cassette deck, was scrapped after players damaged it within hours- but with the Gameboy, there was an odd reverence. Players would pass it around, keep it on to hear the soundtrack, and read through Dr. Hill’s notes and journal entries. Like Eliza, Dr. Hill had a puzzle attached, but he also would comment on other corners of the room. One of our earliest escapes had taken notes from Dr. Hill and Eliza, and had used their hints to help solve the other puzzles and riddles- the game master didn’t need to send a single hint to them.</p>
       </div>
     </div>
-
     <!-- ════════════════════════════════════════
          MEDIA BLOCK 2 — text left, image right (.flip)
     ════════════════════════════════════════ -->
     <div class="dd-media-block flip">
       <div class="dd-media-block-media">
-        <div class="dd-placeholder">Image / Video</div>
-        <!-- <img src="/assets/img/quest-02.jpg" alt="Description of image" /> -->
-        <span class="dd-caption">Caption describing what the viewer is looking at</span>
+        <img src="/assets/img/OBBoard.JPEG" alt="Whiteboard with collaborative design elements">
+        <span class="dd-caption">Notes on theming and layout. Helen was on-point, as always.</span>
       </div>
       <div class="dd-media-block-text">
-        <p>This was the most interesting element of the update- the addition of narrative elements that were not mandatory. By adding this, we created an escape room that offered multiple kinds of rewarding play. Players could focus either on the logical answers, or they could dive into the text to understand more about the purpose of the puzzles, often to get hints for future brainteasers. Players would split up, investigate different corners, then re-group with different perspectives. Often we design escape rooms so players have to do this- rarely do we get to engender this thinking across the entire experience.</p>
-        <p>I’ll never forget a game I hosted when a teenager asked me more about what happened to the characters. He had read every entry and had been talking to Eliza. Alan was pushed as the hero of the room- his corpse, dressed in a hazmat suit, hands players an important key. But Dr. Hill’s remains were nowhere to be found. Asking players to wonder what is absent in a room, while maintaining immersion, is an incredibly difficult task, one that should often only be used for flavor. In the shadow of the hero my previous manager had written, I decided to write Dr. Hill as a coward- and very few realized that he had abandoned his duties. But the fact that someone had figured it out meant a lot to me. These are the connections I strive to develop.</p>
+        <p>This was the most interesting element of the update- the addition of narrative elements that weren’t mandatory. By adding them, we created an escape room that offered multiple kinds of rewarding play. Players could focus either on the logical answers, or they could dive into the text to understand more about the purpose of the puzzles, often to get hints for future brainteasers. Players would split up, investigate different corners, then re-group with different perspectives. Often we design escape rooms so players have to do a task- rarely do we get to engender open thinking across the entire experience.</p>
+        <p>I’ll never forget a game I hosted when a teenager asked me more about what happened to the characters. He had read every entry and had been talking to Eliza. Alan was pushed as the hero of the room- his corpse, dressed in a hazmat suit, hands players an important key. But Dr. Hill’s remains were nowhere to be found. Asking players to wonder why something was absent in a room is an incredibly difficult task. In the shadow of the heroic Dr. Williams, I wrote Dr. Hill as a coward- and very few realized that he had abandoned his duties. But the fact that someone had figured it out meant a lot to me. These are the connections I strive to develop.</p>
       </div>
     </div>
 
@@ -553,3 +551,11 @@ permalink: /projects/ob95
 
   </div><!-- /.deepdive-inner -->
 </div><!-- /.deepdive -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('video').forEach(function(vid) {
+      vid.load();
+      vid.play().catch(function(){});
+    });
+  });
+</script>
