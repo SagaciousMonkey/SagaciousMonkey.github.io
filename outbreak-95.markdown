@@ -476,7 +476,7 @@ permalink: /projects/ob95
     <div class="dd-media-block">
       <div class="dd-media-block-media">
         <video autoplay muted playsinline>
-          <source src="/assets/video/OBGBPlay.mp4" type="video/mp4">
+          <source src="/assets/video/Obgbplay720.mp4" type="video/mp4">
           </video>
         <span class="dd-caption">Test playthough of the Gameboy game on a modern computer.</span>
       </div>

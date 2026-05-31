@@ -475,7 +475,7 @@ permalink: /projects/etr
     ════════════════════════════════════════ -->
     <div class="dd-media-block">
       <div class="dd-media-block-media">
-        <video src="/assets/video/ET_ArkArt.mp4" autoplay muted playsinline></video>
+        <video src="/assets/video/ET_ArkArt.MP4" autoplay muted playsinline></video>
         <span class="dd-caption">Originally, the inside of the ark said "The Riddle of the Sphinx," but... had nothing to do with a man walking on three legs.</span>
       </div>
       <div class="dd-media-block-text">
