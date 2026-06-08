@@ -46,25 +46,27 @@ permalink: /projects
   position: relative;
   left: 50%;
   margin-left: -50vw;
-  height: clamp(180px, 28vh, 320px);
+  height: clamp(160px, 15vw, 20vw);
   overflow: hidden;
   background: var(--surface);
 }
 
 .port-hero-img {
-  width: 100%;
-  height: 100%;
-  background-image: url('/assets/img/ParallaxClouds_3.png');
+  width: 100vw;
+  height: clamp(160px, 15vw, 20vw);
+  background-image: url('/assets/img/trees.png');
   background-repeat: repeat-x;
-  background-size: 2560px 100%;
+  background-size: 100%;
   background-position: left center;
-  filter: brightness(0.45) saturate(0.55);
-  animation: hero-scroll 20s linear infinite;
+  filter: brightness(1.0);
+  animation: hero-scroll 80s linear infinite;
+  image-rendering: pixelated;
+  z-index: 2;
 }
 
 @keyframes hero-scroll {
   0%   { background-position: 0px center; }
-  100% { background-position: -2560px center; }
+  100% { background-position: -2552px center; }
 }
 
 .port-hero::after {
@@ -73,9 +75,9 @@ permalink: /projects
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(14,13,12,0.25) 0%,
-    transparent 40%,
-    rgba(14,13,12,0.6) 80%,
+    rgba(12, 12, 14, 0.25) 20%,
+    transparent 50%,
+    rgba(12, 12, 14, 0.6) 100%,
     var(--bg) 100%
   );
   pointer-events: none;
@@ -83,7 +85,7 @@ permalink: /projects
 
 .port-hero-text {
   position: absolute;
-  top: 2rem;
+  top: 2
   left: 2rem;
   right: 2rem;
   z-index: 2;
@@ -176,9 +178,9 @@ permalink: /projects
     --surface2: #1c1916;
     --border:    #2a2520;
     --text:      #c9b99a;
-    --muted:     #5e5347;
-    --accent:    #b5763a;
-    --accent-lt: #d4935a;
+    --muted:     #47475e;
+    --accent:    #299fce;
+    --accent-lt: #4b8faa;
     --white:     #f0e8db;
   }
 
@@ -499,17 +501,12 @@ permalink: /projects
   .portfolio-grid {
     grid-template-columns: 1fr;
   }
-  }
+}
 
 </style>
 
 <div class="port-hero">
   <div class="port-hero-img"></div>
-
-  <div class="port-hero-text">
-    <span class="port-hero-eyebrow"></span>
-    <h1 class="port-hero-title"></h1>
-  </div>
 </div>
 
 <div class="portfolio-section">
@@ -518,8 +515,8 @@ permalink: /projects
       <!-- Card 1: Egyptian Tomb Redesigned -->
       <article class="port-card" id="card-quest">
         <div class="port-media">
-            <video src="/assets/video/ET_Scroll1.MP4" autoplay muted loop playsinline></video>
-          <span class="media-badge">Image</span>
+            <img src="/assets/img/ETScroll.png"></video>
+          <span class="media-badge">World Design</span>
         </div>
         <div class="port-body">
           <span class="port-category">Authenticity and Immersion</span>
@@ -529,12 +526,11 @@ permalink: /projects
           </p>
         </div>
       </article>
-
       <!-- Card 2: Narrative Design -->
       <article class="port-card" id="card-narrative">
         <div class="port-media">
-          <div class="port-placeholder">Image / Video</div>
-          <span class="media-badge">Video</span>
+          <img src="/assets/img/OBVirus.JPEG">
+          <span class="media-badge">NArrative Design</span>
         </div>
         <div class="port-body">
           <span class="port-category">The Room That Spoke Back</span>
@@ -544,35 +540,33 @@ permalink: /projects
           </p>
         </div>
       </article>
-
       <!-- Card 3: your third discipline -->
       <article class="port-card" id="card-third">
         <div class="port-media">
-          <div class="port-placeholder">Image / Video</div>
+          <img src="/assets/img/CCC.png">
           <!-- <img src="/assets/img/third.jpg" alt="Third Discipline" /> -->
-          <span class="media-badge">Image</span>
+          <span class="media-badge">Collaboration</span>
         </div>
         <div class="port-body">
           <span class="port-category">New Foundations</span>
           <h2 class="port-card-title">Game Jams</h2>
           <p class="port-desc">
-            <i>Video Games, Unity and Godot.</i> Works published on Itch.io and personal projects. Chicken Kaiju, Biscuit-based Dungeon Crawlers, and Twisting old-school flash towers.
+            <i>Video Games; Twine, Unity and Godot.</i> Works published on Itch.io and personal projects. Chicken Kaiju, Biscuit-based Dungeon Crawlers, and an adventure through Hell.
           </p>
         </div>
       </article>
-
       <!-- Card 3: your third discipline -->
       <article class="port-card" id="card-third">
         <div class="port-media">
           <div class="port-placeholder">Image / Video</div>
           <!-- <img src="/assets/img/third.jpg" alt="Third Discipline" /> -->
-          <span class="media-badge">Image</span>
+          <span class="media-badge">Graphic Design</span>
         </div>
         <div class="port-body">
           <span class="port-category">Your Memories, Their Arsenal</span>
           <h2 class="port-card-title">Under Alma</h2>
           <p class="port-desc">
-            <i>Solo TTRPG.</i> An adventure in the belly of the world's soul. Become the muse of a hollow shell, and lead them through the belly of the old world to Blessed Almammon.
+            <i>Solo TTRPG.</i> An adventure in the belly of the world's soul. Become a muse to a weary soul, giving them memories that impart knowledge and experience.
           </p>
           </div>
       </article>

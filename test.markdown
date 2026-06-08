@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: nocss
 title: Home
 ---
 
@@ -21,12 +21,12 @@ title: Home
   :root {
     --bg:        #0e0d0c;
     --surface:   #161412;
-    --surface2:  #1c1916;
+    --surface2: #1c1916;
     --border:    #2a2520;
     --text:      #c9b99a;
-    --muted:     #5e5347;
-    --accent:    #b5763a;
-    --accent-lt: #d4935a;
+    --muted:     #47475e;
+    --accent:    #299fce;
+    --accent-lt: #4b8faa;
     --white:     #f0e8db;
   }
 
@@ -53,42 +53,39 @@ title: Home
   ══════════════════════════════════════════ */
   .home-inner {
     width: 100%;
-    padding-left: 2rem;
+    padding-left: 4rem;
     padding-right: 2rem;
   }
 
   @media (min-width: 48em) {
     .home-inner {
-      padding-left: 20rem;
+      padding-left: 13rem;
       padding-right: 2rem;
     }
   }
 
   @media (min-width: 64em) {
     .home-inner {
-      padding-left: 22rem;
-      padding-right: 4rem;
+      padding-left: 13rem;
+      padding-right: 1rem;
     }
   }
-
-
   /* ══════════════════════════════════════════
      1. DECORATIVE DIAGONAL STRIP
   ══════════════════════════════════════════ */
 
   .home-strip {
     width: 100%;
-    height: clamp(160px, 26vh, 260px);
+    height: clamp(260px, 45vh, 480px);
     display: flex;
     flex-direction: row;
     overflow: hidden;
     /* On desktop, indent past the sidebar */
-    padding-left: 0;
   }
 
   @media (min-width: 48em) {
     .home-strip {
-      padding-left: 18rem; /* sidebar width — strip starts flush with content */
+      padding-left: 12rem; /* sidebar width — strip starts flush with content */
     }
   }
 
@@ -212,7 +209,7 @@ title: Home
   ══════════════════════════════════════════ */
 
   .home-welcome {
-    padding: 3rem 0 3.5rem;
+    padding: 1.5rem 1rem;
   }
 
   .home-welcome-eyebrow {
@@ -248,6 +245,47 @@ title: Home
     border: none;
     border-top: 1px solid var(--border);
     margin: 0 0 3.5rem;
+  }
+
+  .home-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.75rem;
+  flex-wrap: wrap;
+  padding-left: 4rem;
+  }
+
+  .home-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.4rem;
+  font-family: 'Inconsolata', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: var(--bg) !important;
+  }
+
+  .home-btn:hover {
+  background: var(--accent-lt);
+  border-color: var(--accent-lt);
+  color: var(--bg) !important;
+  text-decoration: none !important;
+  }
+/* Ghost variant — outlined, no fill */
+  .home-btn--ghost {
+  background: transparent;
+  color: var(--accent-lt) !important;
+  }
+
+  .home-btn--ghost:hover {
+  background: var(--accent);
+  color: var(--bg) !important;
   }
 
 
@@ -546,8 +584,11 @@ title: Home
     }
 
     .home-inner {
-      padding-left: 1rem;
-      padding-right: 1rem;
+    width: 100%;
+    height: clamp(260px, 60vh, 480px);
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
     }
   }
 
@@ -567,26 +608,19 @@ title: Home
        images or videos when ready.
   ════════════════════════════════════════ -->
   <div class="home-strip" aria-hidden="true">
-
     <div class="strip-panel">
       <div class="strip-panel-media">
-        <div class="strip-placeholder"></div>
-        <!-- <img src="/assets/img/strip-01.jpg" alt="" /> -->
-        <!-- <video src="/assets/video/strip-01.mp4" autoplay muted loop playsinline></video> -->
+        <img src="/assets/img/skink.jpg" alt="">
       </div>
     </div>
-
     <div class="strip-panel">
       <div class="strip-panel-media">
-        <div class="strip-placeholder"></div>
-        <!-- <img src="/assets/img/strip-02.jpg" alt="" /> -->
+        <img src="/assets/img/MissingTheBoys.JPEG" alt="">
       </div>
     </div>
-
     <div class="strip-panel">
       <div class="strip-panel-media">
-        <div class="strip-placeholder"></div>
-        <!-- <img src="/assets/img/strip-03.jpg" alt="" /> -->
+        <img src="/assets/img/mountainsandme.jpg" alt="">
       </div>
     </div>
 
@@ -598,116 +632,14 @@ title: Home
   <div class="home-inner">
     <div class="home-welcome">
       <p class="home-welcome-bio">
-        I'm a narrative designer and writer.
-        I've worked on escape rooms and video games, and I've written short stories and comic scripts.
+        Hey there! I'm a traveled designer and writer. I've renovated and built escape rooms, created characters and storylines to keep players invested, and maintained networks that pass my creativity and passion to my teammates.</p>
+      <p class="home-welcome-bio">I'm currently looking for opportunities in games, where I continue to develop game jams and scripts.
       </p>
+      <div class="home-buttons">
+        <a class="home-btn" href="/projects">Projects</a>
+        <a class="home-btn home-btn--ghost" href="/about">About Me</a>
     </div>
-    <hr class="home-divider" />
   </div>
-
-  <!-- ════════════════════════════════════════
-       3. SELECTED WORK GRID
-  ════════════════════════════════════════ -->
-  <div class="home-inner home-grid-section">
-    <div class="portfolio-grid">
-
-      <!-- Card 1: Quest Design -->
-      <article class="port-card" id="card-quest">
-        <div class="port-media">
-          <div class="port-placeholder">Image / Video</div>
-          <!-- <img src="/assets/img/quest-design.jpg" alt="Quest Design" /> -->
-          <span class="media-badge">Image</span>
-        </div>
-        <div class="port-body">
-          <span class="port-category">Game Writing</span>
-          <h3 class="port-card-title">Quest Design</h3>
-          <p class="port-desc">
-            Crafting player-driven narratives through branching objectives,
-            meaningful choices, and world-coherent storytelling.
-          </p>
-          <button class="port-toggle" aria-expanded="false" aria-controls="drawer-quest">
-            View Projects
-            <i class="port-toggle-icon" aria-hidden="true">&#8964;</i>
-          </button>
-        </div>
-        <div class="port-drawer" id="drawer-quest" role="region">
-          <div class="port-drawer-inner">
-            <p class="port-drawer-label">Projects</p>
-            <ul class="port-drawer-links">
-              <li><a href="/quest-design/main-quest">Main Quest — Project Title</a></li>
-              <li><a href="/quest-design/side-quest-system">Side Quest System</a></li>
-              <li><a href="/quest-design/faction-quests">Faction Quest Design</a></li>
-            </ul>
-          </div>
-        </div>
-      </article>
-
-      <!-- Card 2: Narrative Design -->
-      <article class="port-card" id="card-narrative">
-        <div class="port-media">
-          <div class="port-placeholder">Image / Video</div>
-          <!-- <video src="/assets/video/narrative.mp4" autoplay muted loop playsinline></video> -->
-          <span class="media-badge">Video</span>
-        </div>
-        <div class="port-body">
-          <span class="port-category">Game Writing</span>
-          <h3 class="port-card-title">Narrative Design</h3>
-          <p class="port-desc">
-            Building the architecture of story — lore systems, character voice,
-            and the invisible scaffolding players feel but never see.
-          </p>
-          <button class="port-toggle" aria-expanded="false" aria-controls="drawer-narrative">
-            View Projects
-            <i class="port-toggle-icon" aria-hidden="true">&#8964;</i>
-          </button>
-        </div>
-        <div class="port-drawer" id="drawer-narrative" role="region">
-          <div class="port-drawer-inner">
-            <p class="port-drawer-label">Projects</p>
-            <ul class="port-drawer-links">
-              <li><a href="/narrative-design/lore-system">World Lore System</a></li>
-              <li><a href="/narrative-design/character-voice">Character Voice Guide</a></li>
-              <li><a href="/narrative-design/environmental-storytelling">Environmental Storytelling</a></li>
-            </ul>
-          </div>
-        </div>
-      </article>
-
-      <!-- Card 3: Third Discipline -->
-      <article class="port-card" id="card-third">
-        <div class="port-media">
-          <div class="port-placeholder">Image / Video</div>
-          <!-- <img src="/assets/img/third.jpg" alt="Third Discipline" /> -->
-          <span class="media-badge">Image</span>
-        </div>
-        <div class="port-body">
-          <span class="port-category">Category</span>
-          <h3 class="port-card-title">Third Discipline</h3>
-          <p class="port-desc">
-            A short description of this area of your work and what
-            makes it worth exploring further.
-          </p>
-          <button class="port-toggle" aria-expanded="false" aria-controls="drawer-third">
-            View Projects
-            <i class="port-toggle-icon" aria-hidden="true">&#8964;</i>
-          </button>
-        </div>
-        <div class="port-drawer" id="drawer-third" role="region">
-          <div class="port-drawer-inner">
-            <p class="port-drawer-label">Projects</p>
-            <ul class="port-drawer-links">
-              <li><a href="/third/project-one">Project One</a></li>
-              <li><a href="/third/project-two">Project Two</a></li>
-              <li><a href="/third/project-three">Project Three</a></li>
-            </ul>
-          </div>
-        </div>
-      </article>
-
-    </div><!-- /.portfolio-grid -->
-
-  </div><!-- /.home-inner -->
-
 </div><!-- /.home-page -->
 
 <script>

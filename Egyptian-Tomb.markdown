@@ -39,6 +39,10 @@ permalink: /projects/etr
     --navy:      #182430;   /* Hyde sidebar colour, used sparingly for cohesion */
   }
 
+  .shadow-text {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+
   /* ── Full-bleed wrapper (same technique as hub page) ── */
   .deepdive {
     background: var(--bg);
@@ -111,10 +115,11 @@ permalink: /projects/etr
     position: absolute;
     inset: 0;
     background: linear-gradient(
-      to bottom,
-      transparent 30%,
-      rgba(34, 25, 16, 0.7) 70%,
-      var(--bg) 100%
+    to bottom,
+    rgba(0, 0, 0, 0.25) 40%,
+    transparent 50%,
+    rgba(0, 0, 0, 0.6) 80%,
+    var(--bg) 100%
     );
     pointer-events: none;
   }
@@ -125,6 +130,7 @@ permalink: /projects/etr
     left: 2rem;
     right: 2rem;
     z-index: 2;
+    text-shadow: 2px 2px 5px black;
   }
 
   @media (min-width: 48em) {
@@ -160,7 +166,6 @@ permalink: /projects/etr
     padding: 0 !important;
     text-shadow: 0 2px 20px rgba(0,0,0,0.6);
   }
-
   /* ════════════════════════════════════════
      INTRO / LEDE
   ════════════════════════════════════════ */
@@ -214,6 +219,7 @@ permalink: /projects/etr
     overflow: hidden;
     background: var(--surface);
     border: 1px solid var(--border);
+    justify-items: center;
   }
 
   .dd-media-block-media img,
@@ -245,7 +251,7 @@ permalink: /projects/etr
     background: var(--surface);
   }
 
-  /* Text side */
+
   .dd-media-block-text h2 {
     font-family: 'Playfair Display', serif !important;
     font-size: clamp(1.2rem, 2vw, 1.6rem) !important;
@@ -409,6 +415,7 @@ permalink: /projects/etr
     color: var(--accent) !important;
     text-decoration: none !important;
     transition: color 0.2s ease;
+    text-shadow: 2px 2px 5px black;
   }
 
   .dd-back::before {
@@ -464,8 +471,10 @@ permalink: /projects/etr
   <div class="dd-hero-text">
     <a class="dd-back" href="/projects">Back to Projects</a>
     <h1 class="dd-hero-title">Egyptian Tomb Redesigned</h1>
+      <div class="shadow-text" style="font-size: 1rem; text-indent: 5px; font-family: 'Playfair Display', serif !important; color: var(white); !important;">Three minute read</div>  
   </div>
 </div>
+
   <!-- ═══════════════════════════════════════════
        BODY CONTENT
   ════════════════════════════════════════════ -->
@@ -484,7 +493,7 @@ permalink: /projects/etr
         <p>
         When Egyptian Tomb was first constructed, it was designed to excite players immediately as they entered. Atmospheric lighting with flickering electric torches, large altars with ornate hieroglyphic carvings, and three inches of sand along the floor all worked to hook players into an immersive experience.</p>
         <br>
-        <p>In time, however, game masters began to realize a strange recurring pattern that players took in the room. When players reached the third room, they often would lose track and go back to the first and second rooms, where most of the budget had gone. Even though the third area contained all the answers to its puzzles, requiring no backtracking, game masters would give many hints to keep players’ attention focused. It became clear that the third room lacked something to keep players engaged.</p>
+        <p>In time, however, game masters began to realize a strange recurring pattern that players took in the room. When players reached the third room, they often would lose track and go back to the first and second rooms, where most of the budget had gone. Even though the third area required no backtracking, game masters would give many hints to keep players’ attention focused. It became clear that the third room lacked something to keep players engaged.</p>
       </div>
     </div>
     <!-- ════════════════════════════════════════
@@ -518,7 +527,7 @@ permalink: /projects/etr
     <div class="dd-media-block">
       <div class="dd-media-block-media">
         <img src="/assets/img/ETScroll.JPEG" alt="A scroll, translated into English after a short puzzle.">
-        <span class="dd-caption">The names are all that is needed, but the text below push the theme of the puzzle... the voyage of the solar barque.</span>
+        <span class="dd-caption">The names are all that is needed, but the text below push the theme of the puzzle... the voyage of the soul.</span>
       </div>
       <div class="dd-media-block-text">
         <p>

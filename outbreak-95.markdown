@@ -27,16 +27,16 @@ permalink: /projects/ob95
     box-sizing: border-box;
   }
 
-  :root {
+   :root {
     --bg:        #0e0d0c;
     --surface:   #161412;
+    --surface2: #1c1916;
     --border:    #2a2520;
     --text:      #c9b99a;
-    --muted:     #5e5347;
-    --accent:    #b5763a;
-    --accent-lt: #d4935a;
+    --muted:     #47475e;
+    --accent:    #299fce;
+    --accent-lt: #4b8faa;
     --white:     #f0e8db;
-    --navy:      #182430;   /* Hyde sidebar colour, used sparingly for cohesion */
   }
 
   /* ── Full-bleed wrapper (same technique as hub page) ── */
@@ -85,6 +85,10 @@ permalink: /projects/ob95
     margin-bottom: 0;
   }
 
+  .shadow-text {
+    text-shadow: 2px 2px rgba(50, 47, 85, 0.7);
+  }
+
 .dd-hero-strip {
   display: flex;
   flex-direction: row;
@@ -111,10 +115,11 @@ permalink: /projects/ob95
     position: absolute;
     inset: 0;
     background: linear-gradient(
-      to bottom,
-      transparent 30%,
-      rgba(34, 25, 16, 0.7) 70%,
-      var(--bg) 100%
+    to bottom,
+    rgba(12, 12, 14, 0.25) 20%,
+    transparent 50%,
+    rgba(12, 12, 14, 0.6) 100%,
+    var(--bg) 100%
     );
     pointer-events: none;
   }
@@ -125,6 +130,7 @@ permalink: /projects/ob95
     left: 2rem;
     right: 2rem;
     z-index: 2;
+    text-shadow: 2px 2px 5px black;
   }
 
   @media (min-width: 48em) {
@@ -158,7 +164,7 @@ permalink: /projects/ob95
     line-height: 1.1 !important;
     margin: 0 !important;
     padding: 0 !important;
-    text-shadow: 0 2px 20px rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.6);
   }
 
   /* ════════════════════════════════════════
@@ -214,17 +220,19 @@ permalink: /projects/ob95
     overflow: hidden;
     background: var(--surface);
     border: 1px solid var(--border);
+    justify-items: center;
   }
 
   .dd-media-block-media img,
   .dd-media-block-media video,
   .dd-media-block-media iframe {
-    width: 100%;
+    width: clamp(50%, 90%, 200%);
     display: block;
     margin: 0;
     border-radius: 0;
     filter: brightness(0.85) saturate(0.75);
     transition: filter 0.4s ease, transform 0.5s ease;
+    justify-content: center;
   }
 
   .dd-media-block-media:hover img,
@@ -409,6 +417,7 @@ permalink: /projects/ob95
     color: var(--accent) !important;
     text-decoration: none !important;
     transition: color 0.2s ease;
+    text-shadow: 2px 2px 5px black;
   }
 
   .dd-back::before {
@@ -464,6 +473,7 @@ permalink: /projects/ob95
   <div class="dd-hero-text">
     <a class="dd-back" href="/projects">Back to Projects</a>
     <h1 class="dd-hero-title">Outbreak '95</h1>
+      <div class="shadow-text" style="font-size: 1rem; text-indent: 5px; font-family: 'Playfair Display', serif !important; color: var(white); !important;">Five minute read</div> 
   </div>
 </div>
   <!-- ═══════════════════════════════════════════
@@ -484,6 +494,7 @@ permalink: /projects/ob95
         <h3>Narrative, Environment, Prop, and Puzzle Design</h3>
         <br>
         <p>Outbreak was an older room, designed to be a CDC facility that housed a cure for an apocalyptic virus. It was a high difficulty game that appealed to experts, but lacked decoration. Marketing it was difficult, and it consistently underperformed. I pitched a Halloween variant- “Zombie” Outbreak. The negative space was covered with blood, the lighting was lowered, and the room’s soundtrack was replaced with a moody synthwave track. The room consistently sold out, a complete reversal of its previous performance.</p>
+        <p>After two strong Halloweens, we decided to keep the room’s Zombie theme throughout the year. The name Outbreak ‘95 gave us a chance to add new elements that evoked the technological surge of the Nineties. Soon, we added a Gameboy game running on original hardware and a PC that ran a Python variant of the classic Eliza chatbot.</p>
       </div>
     </div>
     <!-- ════════════════════════════════════════
@@ -495,7 +506,6 @@ permalink: /projects/ob95
         <span class="dd-caption">Eliza (named Barbara in-game) reacted to posters in the room and shot down any attempts at an easy hint.</span>
       </div>
       <div class="dd-media-block-text">
-        <p>After two strong Halloweens, we decided to keep the room’s Zombie theme throughout the year. The name Outbreak ‘95 gave us a chance to add new elements that evoked the technological surge of the Nineties. Soon, we added a Gameboy game running on original hardware and a PC that ran a Python variant of the classic Eliza chatbot.</p>
         <p>The chatbot came first. I spent days diving into the script and added keywords that players could spot in the room- the script began with terms like “Zombie,” and “Virus,” and ended with exact terms from the puzzles, as well as references to the other characters who worked in the lab. Noting what testers typed in gave me even more keywords for her to respond to. She hated foul language and ignored direct attempts for answers, but gave depth to the other props in the room. </p>
       </div>
     </div>

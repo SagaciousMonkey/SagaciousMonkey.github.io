@@ -56,13 +56,19 @@ html {
  * out above content in mobile and later moves to the side with wider viewports.
  */
 
+
 .sidebar {
   z-index:100;
   text-align: center;
   padding: 2rem 1rem;
-  color: rgba(255,255,255,.5);
-  background-color: #202020;
 }
+
+.sidebar-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (min-width: 48em) {
   .sidebar {
     position: fixed;
@@ -70,7 +76,7 @@ html {
     left: 0;
     bottom: 0;
     width: 12rem;
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -136,7 +142,8 @@ a.sidebar-nav-item:focus {
 .content {
   box-shadow: none;
   border-radius: 0;
-  padding: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 @media (min-width: 48em) {
@@ -210,7 +217,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Deep Navy - in use*/
 .theme-base-08 .sidebar {
-  background-color: #161412;
+  height: 100%;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  image-rendering: -moz-crisp-edges;
+  background-image: url(/assets/img/dark_marble-export.png);
 }
 .theme-base-08 .content a,
 .theme-base-08 .related-posts li a:hover {
