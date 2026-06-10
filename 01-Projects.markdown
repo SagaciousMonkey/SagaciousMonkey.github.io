@@ -6,7 +6,6 @@ permalink: /projects
 
 <style>
 
-/* ── Card title flip ── */
 .port-card-title {
   cursor: pointer;
   transition: color 0.2s ease;
@@ -35,11 +34,6 @@ permalink: /projects
 .port-card.is-flipped .port-desc {
   display: none;
 }
-
-
-/* ══════════════════════════════════════════
-   PORTFOLIO HERO
-══════════════════════════════════════════ */
 
 .port-hero {
   width: 100vw;
@@ -164,8 +158,6 @@ permalink: /projects
   transform: translateX(4px);
 }
 
-
-  /* ── Reset (scoped so it doesn't affect Hyde/Poole globally) ── */
   .portfolio-section *,
   .portfolio-section *::before,
   .portfolio-section *::after {
@@ -184,7 +176,6 @@ permalink: /projects
     --white:     #f0e8db;
   }
 
-  /* ── Full-bleed wrapper ── */
   .portfolio-section {
     background: var(--bg);
    color: var(--text);
@@ -197,28 +188,23 @@ permalink: /projects
     padding: 2rem 0.5rem;  /* was 4rem 2rem */
 }
 
-  /*
-   * ── Inner container ──*/
-
 .portfolio-inner {
   width: 100%;
 }
 
 @media (min-width: 48em) {
   .portfolio-inner {
-    padding-left: 13rem;  /* sidebar (12rem) + 1rem gutter */
+    padding-left: 13rem;  
     padding-right: 1rem;
   }
 }
 
 @media (min-width: 64em) {
   .portfolio-inner {
-    padding-left: 14rem;  /* sidebar (12rem) + 2rem gutter */
+    padding-left: 14rem;  
     padding-right: 1rem;
   }
 }
-
-  /* ── Section header ── */
   .port-label {
     font-size: 0.7rem;
     letter-spacing: 0.25em;
@@ -237,7 +223,6 @@ permalink: /projects
     border-bottom: 1px solid var(--border);
   }
 
-  /* ── Grid ── */
   .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -245,7 +230,6 @@ permalink: /projects
     width: 100%;
   }
 
-  /* ── Card ── */
   .port-card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -259,7 +243,6 @@ permalink: /projects
     border-color: var(--accent);
   }
 
-  /* ── Media ── */
   .port-media {
     position: relative;
     width: 100%;
@@ -277,8 +260,8 @@ permalink: /projects
     display: block;
     transition: transform 0.6s ease, filter 0.4s ease;
     filter: brightness(0.75) saturate(0.6);
-    margin: 0;         /* override Poole img margin */
-    border-radius: 0;  /* override Poole img border-radius */
+    margin: 0;
+    border-radius: 0;
   }
 
   .port-card.is-open .port-media img,
@@ -319,7 +302,6 @@ permalink: /projects
     );
   }
 
-  /* ── Card body ── */
   .port-body {
     padding: 1.5rem;
     flex: 1;
@@ -341,7 +323,7 @@ permalink: /projects
   .port-card-title {
     font-size: clamp(1rem, 1.4vw, 1.3rem) !important;
     font-weight: 600 !important;
-    color: var(--white) !important;  /* override Poole h2 color */
+    color: var(--white) !important;
     line-height: 1.25;
     margin: 0;
     padding: 0;
@@ -355,7 +337,6 @@ permalink: /projects
     margin: 0;
   }
 
-  /* ── Toggle button (replaces the old "View Work" link) ── */
   .port-toggle {
     display: inline-flex;
     align-items: center;
@@ -378,7 +359,6 @@ permalink: /projects
     color: var(--white);
   }
 
-  /* Animated chevron */
   .port-toggle-icon {
     display: inline-block;
     font-style: normal;
@@ -390,7 +370,6 @@ permalink: /projects
     transform: rotate(180deg);
   }
 
-  /* ── Accordion drawer ── */
   .port-drawer {
     max-height: 0;
     overflow: hidden;
@@ -400,7 +379,7 @@ permalink: /projects
   }
 
   .port-card.is-open .port-drawer {
-    max-height: 600px; /* tall enough for any number of links */
+    max-height: 600px;
     border-top-width: 1px;
   }
 
@@ -454,7 +433,6 @@ permalink: /projects
     text-decoration: none !important;
   }
 
-  /* Arrow on each sub-link */
   .port-drawer-links a::after {
     content: '→';
     font-size: 0.7rem;
@@ -468,12 +446,6 @@ permalink: /projects
     color: var(--accent-lt);
     transform: translateX(3px);
   }
-
-  /* ── Responsive ──
-   *
-   * Mirrors Hyde's own breakpoints (48em, 64em) so layout
-   * transitions stay in sync with the sidebar behaviour.
-   */
 
 /* Wide desktop — 4 cols */
 @media (min-width: 64em) {
@@ -512,7 +484,6 @@ permalink: /projects
 <div class="portfolio-section">
   <div class="portfolio-inner">
     <div class="portfolio-grid">
-      <!-- Card 1: Egyptian Tomb Redesigned -->
       <article class="port-card" id="card-quest">
         <div class="port-media">
             <img src="/assets/img/ETScroll.png"></video>
@@ -526,11 +497,10 @@ permalink: /projects
           </p>
         </div>
       </article>
-      <!-- Card 2: Narrative Design -->
       <article class="port-card" id="card-narrative">
         <div class="port-media">
           <img src="/assets/img/OBVirus.JPEG">
-          <span class="media-badge">NArrative Design</span>
+          <span class="media-badge">Narrative Design</span>
         </div>
         <div class="port-body">
           <span class="port-category">The Room That Spoke Back</span>
@@ -540,11 +510,9 @@ permalink: /projects
           </p>
         </div>
       </article>
-      <!-- Card 3: your third discipline -->
       <article class="port-card" id="card-third">
         <div class="port-media">
           <img src="/assets/img/CCC.png">
-          <!-- <img src="/assets/img/third.jpg" alt="Third Discipline" /> -->
           <span class="media-badge">Collaboration</span>
         </div>
         <div class="port-body">
@@ -555,12 +523,10 @@ permalink: /projects
           </p>
         </div>
       </article>
-      <!-- Card 3: your third discipline -->
       <article class="port-card" id="card-third">
         <div class="port-media">
           <div class="port-placeholder">Image / Video</div>
-          <!-- <img src="/assets/img/third.jpg" alt="Third Discipline" /> -->
-          <span class="media-badge">Graphic Design</span>
+          <span class="media-badge">Quest Design</span>
         </div>
         <div class="port-body">
           <span class="port-category">Your Memories, Their Arsenal</span>
@@ -571,10 +537,10 @@ permalink: /projects
           </div>
       </article>
 
-    </div><!-- /.portfolio-grid -->
+    </div>
 
-  </div><!-- /.portfolio-inner -->
-</div><!-- /.portfolio-section -->
+  </div>
+</div>
 
 <script>
   document.querySelectorAll('.port-toggle').forEach(function(btn) {
@@ -582,14 +548,14 @@ permalink: /projects
       var card   = btn.closest('.port-card');
       var isOpen = card.classList.contains('is-open');
 
-      // Close all cards that have a toggle button
+      // Close all cards that have toggle
       document.querySelectorAll('.port-card').forEach(function(c) {
         c.classList.remove('is-open');
         var toggle = c.querySelector('.port-toggle');
         if (toggle) toggle.setAttribute('aria-expanded', 'false');
       });
 
-      // Open this one if it was closed
+      // Open this one if closed
       if (!isOpen) {
         card.classList.add('is-open');
         btn.setAttribute('aria-expanded', 'true');

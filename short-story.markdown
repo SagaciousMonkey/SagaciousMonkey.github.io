@@ -2,7 +2,7 @@
 layout: nocss
 category: "Short Story, ~20 min read" # Change per page
 hero: # Path to your hero image
-permalink: /creative-writing/short-story
+permalink: /fiction/short-story
 ---
 
 <!--
@@ -35,13 +35,13 @@ permalink: /creative-writing/short-story
   :root {
     --bg:        #0e0d0c;
     --surface:   #161412;
+    --surface2: #1c1916;
     --border:    #2a2520;
     --text:      #c9b99a;
-    --muted:     #5e5347;
-    --accent:    #b5763a;
-    --accent-lt: #d4935a;
+    --muted:     #47475e;
+    --accent:    #299fce;
+    --accent-lt: #4b8faa;
     --white:     #f0e8db;
-    --navy:      #182430;   /* Hyde sidebar colour, used sparingly for cohesion */
   }
 
   /* ── Full-bleed wrapper (same technique as hub page) ── */
@@ -89,17 +89,33 @@ permalink: /creative-writing/short-story
     margin-bottom: 0;
   }
 
-  .dd-hero-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
-    display: block;
-    margin: 0;
-    border-radius: 0;
-    filter: brightness(0.55) saturate(0.7);
-    transition: filter 0.6s ease;
-  }
+  .port-hero {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+  height: clamp(160px, 15vw, 20vw);
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.port-hero-img {
+  width: 100vw;
+  height: clamp(160px, 15vw, 20vw);
+  background-image: url('/assets/img/trees.png');
+  background-repeat: repeat-x;
+  background-size: 100%;
+  background-position: left center;
+  filter: brightness(1.0);
+  animation: hero-scroll 80s linear infinite;
+  image-rendering: pixelated;
+  z-index: 2;
+}
+
+@keyframes hero-scroll {
+  0%   { background-position: 0px center; }
+  100% { background-position: -2552px center; }
+}
 
   /* Gradient fade at the bottom so the title reads cleanly */
   .dd-hero::after {
@@ -152,6 +168,14 @@ permalink: /creative-writing/short-story
     font-weight: 700 !important;
     color: var(--white) !important;
     line-height: 1.1 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.6);
+  }
+    .dd-hero-subtitle {
+    font-family: 'Inconsolata', serif !important;
+    font-weight: 100 !important;
+    color: var(--accent) !important;
     margin: 0 !important;
     padding: 0 !important;
     text-shadow: 0 2px 20px rgba(0,0,0,0.6);
@@ -426,33 +450,18 @@ permalink: /creative-writing/short-story
       #1b1915 40px
     );
   }
-
 </style>
-
-<!-- ═══════════════════════════════════════════
-     HERO
-════════════════════════════════════════════ -->
 <div class="deepdive">
-
   <div class="dd-hero">
-    <!-- Replace with your hero image -->
-    <!-- For a video hero instead: -->
-    <video class="dd-hero-img" src="/assets/video/ET_ArkArt.mp4" autoplay muted playsinline></video>
-
+    <div class="port-hero-img"></div>
     <div class="dd-hero-text">
       <span class="dd-hero-category">Short Story, ~20 minute read</span>
       <h1 class="dd-hero-title">Thieves of the Orchard</h1>
-      <h4>Winner of the El Portal "Best Space Western" Award</h4>
+      <h4 class="dd-hero-subtitle">Winner of the El Portal Space Western Award</h4>
     </div>
-
   </div>
-
-  <!-- ═══════════════════════════════════════════
-       BODY CONTENT
-  ════════════════════════════════════════════ -->
   <div class="deepdive-inner">
-    <a class="dd-back" href="/design-writing-portfolio">Back to Portfolio</a>
-    <!-- ── Lede / intro paragraph ── -->
+    <a class="dd-back" href="/fiction">Back to Portfolio</a>
     <div class="dd-lede">
       <p>
         The little one's tears were getting close to my drink, and the big one's hand was grasping my shoulder too tightly. I grit my teeth and growled at neither one in particular.

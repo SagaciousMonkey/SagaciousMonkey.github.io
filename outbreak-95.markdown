@@ -4,20 +4,6 @@ category: "Outbreak '95" # Change per page
 permalink: /projects/ob95
 ---
 
-<!--
-  DEEP-DIVE PAGE TEMPLATE
-  ========================
-  Usage:
-  - Copy this file, rename it (e.g. quest-design.html or quest-design.md)
-  - Update the front matter above (title, category, hero image path)
-  - Replace placeholder text and media paths throughout
-  - Available section types:
-      .dd-media-block          — alternating image/video + text
-      .dd-media-block.flip     — forces media to the right side
-      .dd-pullquote            — large highlighted quote
-      .dd-credits              — tools/credits table at the bottom
--->
-
 <style>
 
   /* ── Scoped reset ── */
@@ -39,20 +25,17 @@ permalink: /projects/ob95
     --white:     #f0e8db;
   }
 
-  /* ── Full-bleed wrapper (same technique as hub page) ── */
   .deepdive {
     background: var(--bg);
     color: var(--text);
     font-family: 'Inconsolata', monospace;
     font-weight: 300;
-
-    width: 100vw;
+    width: 98vw;
     position: relative;
     left: 50%;
     margin-left: -50vw;
   }
 
-  /* ── Inner container — mirrors Hyde sidebar offsets ── */
   .deepdive-inner {
     width: 100%;
     padding: 0 2rem 6rem;
@@ -79,7 +62,6 @@ permalink: /projects/ob95
   .dd-hero {
     position: relative;
     width: 100%;
-    /*Changed third height variable to shorten length of hero at top of page */
     height: clamp(280px, 50vh, 300px);
     overflow: hidden;
     margin-bottom: 0;
@@ -109,7 +91,6 @@ permalink: /projects/ob95
   border-right: none;
 }
 
-  /* Gradient fade at the bottom so the title reads cleanly */
   .dd-hero::after {
     content: '';
     position: absolute;
@@ -167,10 +148,6 @@ permalink: /projects/ob95
     text-shadow: 2px 2px 20px rgba(0,0,0,0.6);
   }
 
-  /* ════════════════════════════════════════
-     INTRO / LEDE
-  ════════════════════════════════════════ */
-
   .dd-lede {
     max-width: 68ch;
     margin: 3.5rem 0 4rem;
@@ -194,10 +171,6 @@ permalink: /projects/ob95
     margin: 0 0 0rem;
   }
 
-  /* ════════════════════════════════════════
-     MEDIA BLOCKS  (alternating layout)
-  ════════════════════════════════════════ */
-
   .dd-media-block {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -210,11 +183,10 @@ permalink: /projects/ob95
   .dd-media-block .dd-media-block-media { order: 1; }
   .dd-media-block .dd-media-block-text  { order: 2; }
 
-  /* .flip: media right, text left */
+  /* .flip: */
   .dd-media-block.flip .dd-media-block-media { order: 2; }
   .dd-media-block.flip .dd-media-block-text  { order: 1; }
 
-  /* Media container */
   .dd-media-block-media {
     position: relative;
     overflow: hidden;
@@ -241,7 +213,6 @@ permalink: /projects/ob95
     transform: scale(1.02);
   }
 
-  /* Caption sits below the media inside the media container */
   .dd-caption {
     display: block;
     font-size: 0.65rem;
@@ -253,7 +224,6 @@ permalink: /projects/ob95
     background: var(--surface);
   }
 
-  /* Text side */
   .dd-media-block-text h2 {
     font-family: 'Playfair Display', serif !important;
     font-size: clamp(1.2rem, 2vw, 1.6rem) !important;
@@ -290,7 +260,6 @@ permalink: /projects/ob95
     margin-bottom: 0;
   }
 
-  /* Stack vertically on narrow viewports */
   @media (max-width: 47.99em) {
     .dd-media-block,
     .dd-media-block.flip {
@@ -305,10 +274,6 @@ permalink: /projects/ob95
     .dd-media-block.flip .dd-media-block-text  { order: 2; }
   }
 
-  /* ════════════════════════════════════════
-     PULL QUOTE
-  ════════════════════════════════════════ */
-
   .dd-pullquote {
     position: relative;
     margin: 2rem 0 5rem;
@@ -317,7 +282,6 @@ permalink: /projects/ob95
     background: var(--surface);
   }
 
-  /* Large decorative quotation mark */
   .dd-pullquote::before {
     content: '\201C';
     position: absolute;
@@ -354,10 +318,6 @@ permalink: /projects/ob95
     color: var(--accent-lt);
     font-style: normal;
   }
-
-  /* ════════════════════════════════════════
-     CREDITS / TOOLS SECTION
-  ════════════════════════════════════════ */
 
   .dd-credits {
     margin-top: 6rem;
@@ -402,10 +362,6 @@ permalink: /projects/ob95
     line-height: 1.4;
   }
 
-  /* ════════════════════════════════════════
-     BACK LINK
-  ════════════════════════════════════════ */
-
   .dd-back {
     display: inline-flex;
     align-items: center;
@@ -435,7 +391,6 @@ permalink: /projects/ob95
     transform: translateX(-4px);
   }
 
-  /* ── Placeholder style (remove when using real media) ── */
   .dd-placeholder {
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -457,11 +412,7 @@ permalink: /projects/ob95
 
 </style>
 
-<!-- ═══════════════════════════════════════════
-     HERO
-════════════════════════════════════════════ -->
 <div class="deepdive">
-
 <div class="dd-hero">
   <div class="dd-hero-strip">
     <div class="dd-hero-panel" style="background-image: url('/assets/img/OBVirus.JPEG')"></div>
@@ -476,13 +427,7 @@ permalink: /projects/ob95
       <div class="shadow-text" style="font-size: 1rem; text-indent: 5px; font-family: 'Playfair Display', serif !important; color: var(white); !important;">Five minute read</div> 
   </div>
 </div>
-  <!-- ═══════════════════════════════════════════
-       BODY CONTENT
-  ════════════════════════════════════════════ -->
   <div class="deepdive-inner">
-    <!-- ════════════════════════════════════════
-         MEDIA BLOCK 1 — image left, text right
-    ════════════════════════════════════════ -->
     <div class="dd-media-block">
       <div class="dd-media-block-media">
         <video autoplay muted playsinline style="max-width: 85%; display: block; margin: 0 auto;">
@@ -497,9 +442,6 @@ permalink: /projects/ob95
         <p>After two strong Halloweens, we decided to keep the room’s Zombie theme throughout the year. The name Outbreak ‘95 gave us a chance to add new elements that evoked the technological surge of the Nineties. Soon, we added a Gameboy game running on original hardware and a PC that ran a Python variant of the classic Eliza chatbot.</p>
       </div>
     </div>
-    <!-- ════════════════════════════════════════
-         MEDIA BLOCK 2 — text left, image right (.flip)
-    ════════════════════════════════════════ -->
     <div class="dd-media-block flip">
       <div class="dd-media-block-media">
         <img src="/assets/img/OBEliza2.JPEG" alt="Speaking to a computer in the room">
@@ -509,9 +451,6 @@ permalink: /projects/ob95
         <p>The chatbot came first. I spent days diving into the script and added keywords that players could spot in the room- the script began with terms like “Zombie,” and “Virus,” and ended with exact terms from the puzzles, as well as references to the other characters who worked in the lab. Noting what testers typed in gave me even more keywords for her to respond to. She hated foul language and ignored direct attempts for answers, but gave depth to the other props in the room. </p>
       </div>
     </div>
-    <!-- ════════════════════════════════════════
-         PULL QUOTE
-    ════════════════════════════════════════ -->
     <div class="dd-pullquote">
       <blockquote>
         <p>
@@ -520,9 +459,6 @@ permalink: /projects/ob95
         <cite>— Rich B, Google Review</cite>
       </blockquote>
     </div>
-    <!-- ════════════════════════════════════════
-         MEDIA BLOCK 3 — image left, text right
-    ════════════════════════════════════════ -->
     <div class="dd-media-block">
       <div class="dd-media-block-media">
         <img src="/assets/img/OB_CDCCartridges.JPEG" alt="Different Gameboy Cartridges">
@@ -533,9 +469,6 @@ permalink: /projects/ob95
         <p>The Gameboy was a strange addition, but it was one that resonated with players. A previous attempt at a Nineties device, a cassette deck, was scrapped after players damaged it within hours- but with the Gameboy, there was an odd reverence. Players would pass it around, keep it on to hear the soundtrack, and read through Dr. Hill’s notes and journal entries. Like Eliza, Dr. Hill had a puzzle attached, but he also would comment on other corners of the room. One of our earliest escapes had taken notes from Dr. Hill and Eliza, and had used their hints to help solve the other puzzles and riddles- the game master didn’t need to send a single hint to them.</p>
       </div>
     </div>
-    <!-- ════════════════════════════════════════
-         MEDIA BLOCK 2 — text left, image right (.flip)
-    ════════════════════════════════════════ -->
     <div class="dd-media-block flip">
       <div class="dd-media-block-media">
         <img src="/assets/img/OBBoard.JPEG" alt="Whiteboard with collaborative design elements">
@@ -546,10 +479,6 @@ permalink: /projects/ob95
         <p>I’ll never forget a game I hosted when a teenager asked me more about what happened to the characters. He had read every entry and had been talking to Eliza. Alan was pushed as the hero of the room- his corpse, dressed in a hazmat suit, hands players an important key. But Dr. Hill’s remains were nowhere to be found. Asking players to wonder why something was absent in a room is an incredibly difficult task. In the shadow of the heroic Dr. Williams, I wrote Dr. Hill as a coward- and very few realized that he had abandoned his duties. But the fact that someone had figured it out meant a lot to me. These are the connections I strive to develop.</p>
       </div>
     </div>
-
-    <!-- ════════════════════════════════════════
-         PULL QUOTE
-    ════════════════════════════════════════ -->
     <div class="dd-pullquote">
       <blockquote>
         <p>
@@ -558,7 +487,6 @@ permalink: /projects/ob95
         <cite>— Jeremy Smolik, Google Review</cite>
       </blockquote>
     </div>
-
   </div><!-- /.deepdive-inner -->
 </div><!-- /.deepdive -->
 <script>

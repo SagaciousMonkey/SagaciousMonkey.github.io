@@ -1,10 +1,11 @@
 ---
 layout: page
+title: Fiction
+permalink: /fiction
 ---
 
 <style>
 
-/* ── Card title flip ── */
 .port-card-title {
   cursor: pointer;
   transition: color 0.2s ease;
@@ -162,8 +163,6 @@ layout: page
   transform: translateX(4px);
 }
 
-
-  /* ── Reset (scoped so it doesn't affect Hyde/Poole globally) ── */
   .portfolio-section *,
   .portfolio-section *::before,
   .portfolio-section *::after {
@@ -182,7 +181,7 @@ layout: page
     --white:     #f0e8db;
   }
 
-  /* ── Full-bleed wrapper ── */
+
   .portfolio-section {
     background: var(--bg);
    color: var(--text);
@@ -195,28 +194,24 @@ layout: page
     padding: 2rem 0.5rem;  /* was 4rem 2rem */
 }
 
-  /*
-   * ── Inner container ──*/
-
 .portfolio-inner {
   width: 100%;
 }
 
 @media (min-width: 48em) {
   .portfolio-inner {
-    padding-left: 13rem;  /* sidebar (12rem) + 1rem gutter */
+    padding-left: 13rem; 
     padding-right: 1rem;
   }
 }
 
 @media (min-width: 64em) {
   .portfolio-inner {
-    padding-left: 14rem;  /* sidebar (12rem) + 2rem gutter */
+    padding-left: 14rem;
     padding-right: 1rem;
   }
 }
 
-  /* ── Section header ── */
   .port-label {
     font-size: 0.7rem;
     letter-spacing: 0.25em;
@@ -235,7 +230,6 @@ layout: page
     border-bottom: 1px solid var(--border);
   }
 
-  /* ── Grid ── */
   .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -243,7 +237,6 @@ layout: page
     width: 100%;
   }
 
-  /* ── Card ── */
   .port-card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -257,7 +250,6 @@ layout: page
     border-color: var(--accent);
   }
 
-  /* ── Media ── */
   .port-media {
     position: relative;
     width: 100%;
@@ -275,8 +267,8 @@ layout: page
     display: block;
     transition: transform 0.6s ease, filter 0.4s ease;
     filter: brightness(0.75) saturate(0.6);
-    margin: 0;         /* override Poole img margin */
-    border-radius: 0;  /* override Poole img border-radius */
+    margin: 0;
+    border-radius: 0;
   }
 
   .port-card.is-open .port-media img,
@@ -317,7 +309,6 @@ layout: page
     );
   }
 
-  /* ── Card body ── */
   .port-body {
     padding: 1.5rem;
     flex: 1;
@@ -328,18 +319,29 @@ layout: page
   }
 
   .port-category {
-    font-size: 0.62rem;
-    letter-spacing: 0.22em;
+    font-size: 0.8rem;
+    letter-spacing: .1em;
     text-transform: uppercase;
     color: var(--accent);
     margin: 0;
     padding: 0;
   }
 
+  .sub-port-category {
+    display: flex;
+    font-size: 0.7rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--accent-lt);
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+
   .port-card-title {
     font-size: clamp(1rem, 1.4vw, 1.3rem) !important;
     font-weight: 600 !important;
-    color: var(--white) !important;  /* override Poole h2 color */
+    color: var(--white) !important;
     line-height: 1.25;
     margin: 0;
     padding: 0;
@@ -353,7 +355,6 @@ layout: page
     margin: 0;
   }
 
-  /* ── Toggle button (replaces the old "View Work" link) ── */
   .port-toggle {
     display: inline-flex;
     align-items: center;
@@ -376,7 +377,6 @@ layout: page
     color: var(--white);
   }
 
-  /* Animated chevron */
   .port-toggle-icon {
     display: inline-block;
     font-style: normal;
@@ -388,7 +388,6 @@ layout: page
     transform: rotate(180deg);
   }
 
-  /* ── Accordion drawer ── */
   .port-drawer {
     max-height: 0;
     overflow: hidden;
@@ -398,7 +397,7 @@ layout: page
   }
 
   .port-card.is-open .port-drawer {
-    max-height: 600px; /* tall enough for any number of links */
+    max-height: 600px;
     border-top-width: 1px;
   }
 
@@ -406,7 +405,6 @@ layout: page
     padding: 1rem 1.5rem 1.25rem;
   }
 
-  /* Drawer heading */
   .port-drawer-label {
     font-size: 0.58rem;
     letter-spacing: 0.25em;
@@ -416,7 +414,6 @@ layout: page
     padding: 0;
   }
 
-  /* Sub-link list */
   .port-drawer-links {
     list-style: none;
     margin: 0;
@@ -452,7 +449,6 @@ layout: page
     text-decoration: none !important;
   }
 
-  /* Arrow on each sub-link */
   .port-drawer-links a::after {
     content: '→';
     font-size: 0.7rem;
@@ -467,35 +463,29 @@ layout: page
     transform: translateX(3px);
   }
 
-  /* ── Responsive ──
-   *
-   * Mirrors Hyde's own breakpoints (48em, 64em) so layout
-   * transitions stay in sync with the sidebar behaviour.
-   */
-
-/* Wide desktop — 4 cols */
-@media (min-width: 64em) {
-  .portfolio-grid {
-    grid-template-columns: repeat(4, 1fr);
+  /* Wide desktop — 4 cols */
+  @media (min-width: 64em) {
+    .portfolio-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
-}
 
-/* Mid desktop with sidebar — 3 cols */
-@media (min-width: 48em) and (max-width: 63.99em) {
-  .portfolio-grid {
-    grid-template-columns: repeat(3, 1fr);
+  /* Mid desktop with sidebar — 3 cols */
+  @media (min-width: 48em) and (max-width: 63.99em) {
+    .portfolio-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
-}
 
-/* Tablet — 2 cols */
-@media (max-width: 47.99em) {
-  .portfolio-grid {
-    grid-template-columns: repeat(2, 1fr);
+  /* Tablet — 2 cols */
+  @media (max-width: 47.99em) {
+    .portfolio-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
-}
 
-/* Mobile — 1 col */
-@media (max-width: 30em) {
+  /* Mobile — 1 col */
+  @media (max-width: 30em) {
   .portfolio-grid {
     grid-template-columns: 1fr;
   }
@@ -506,73 +496,46 @@ layout: page
 <div class="port-hero">
   <div class="port-hero-img"></div>
 </div>
-
 <div class="portfolio-section">
   <div class="portfolio-inner">
     <div class="portfolio-grid">
-      <!-- Card 1: Egyptian Tomb Redesigned -->
       <article class="port-card" id="card-quest">
-        <div class="port-media">
-            <img src="/assets/img/ETScroll.png"></video>
-          <span class="media-badge">World Design</span>
-        </div>
         <div class="port-body">
-          <span class="port-category">Authenticity and Immersion</span>
-          <h2 class="port-card-title"><a href="/projects/etr">Egyptian Tomb Redux</a></h2>
+          <span class="port-category">Flash Fiction</span>
+          <h2 class="port-card-title"><a href="/fiction/flash-fiction">The Salt Beneath the Sea</a></h2>
+            <span class="sub-port-category">Five minute read</span>
+          <br>
           <p class="port-desc">
-            <i>Escape Room.</i> A re-imagining of an industry staple, focusing on game flow and environment design. Players follow the paths of multiple explorers as they journey through a tomb from the Old Kingdom era.
+            A shamed executioner travels with a blasphemous madman that refuses to die. 
           </p>
         </div>
       </article>
-      <!-- Card 2: Narrative Design -->
       <article class="port-card" id="card-narrative">
-        <div class="port-media">
-          <img src="/assets/img/OBVirus.JPEG">
-          <span class="media-badge">NArrative Design</span>
-        </div>
-        <div class="port-body">
-          <span class="port-category">The Room That Spoke Back</span>
-          <h2 class="port-card-title"><a href="/projects/ob95">Outbreak '95</a></h2>
+        <div class="port-body" align-items="middle">
+          <span class="port-category">Short Story</span>
+          <h2 class="port-card-title"><a href="/fiction/short-story">Thieves of the Orchard</a></h2>
+            <span class="sub-port-category">Fifteen minute read</span>
+          <br>
           <p class="port-desc">
-            <i>Escape Room.</i> A survival horror experience with extensive scripted props, such as an original Gameboy and a chatbot PC. This room pushed atmosphere over jumpscare horror.
+            Winner of the El Portal "Best Space Western" event. A cosmic mercenary sent to deal with renegades finds the beginning of new life.
           </p>
         </div>
       </article>
-      <!-- Card 3: your third discipline -->
       <article class="port-card" id="card-third">
-        <div class="port-media">
-          <img src="/assets/img/CCC.png">
-          <!-- <img src="/assets/img/third.jpg" alt="Third Discipline" /> -->
-          <span class="media-badge">Collaboration</span>
-        </div>
-        <div class="port-body">
-          <span class="port-category">New Foundations</span>
-          <h2 class="port-card-title">Game Jams</h2>
+        <div class="port-body" align-items="middle">
+          <span class="port-category">Interactive Fiction</span>
+          <h2 class="port-card-title"><a href="/fiction/interactive-fiction">Hellventure</a></h2>
+            <span class="sub-port-category">Thirty minute read</span>
+          <br>
           <p class="port-desc">
-            <i>Video Games; Twine, Unity and Godot.</i> Works published on Itch.io and personal projects. Chicken Kaiju, Biscuit-based Dungeon Crawlers, and an adventure through Hell.
+            Under Construction.
+            The youngest daughter of a family of demon hunters journeys to prove her worth in Hell. How she relates to her family is up to your decisions.
           </p>
         </div>
       </article>
-      <!-- Card 3: your third discipline -->
-      <article class="port-card" id="card-third">
-        <div class="port-media">
-          <div class="port-placeholder">Image / Video</div>
-          <!-- <img src="/assets/img/third.jpg" alt="Third Discipline" /> -->
-          <span class="media-badge">Quest Design</span>
-        </div>
-        <div class="port-body">
-          <span class="port-category">Your Memories, Their Arsenal</span>
-          <h2 class="port-card-title">Under Alma</h2>
-          <p class="port-desc">
-            <i>Solo TTRPG.</i> An adventure in the belly of the world's soul. Become a muse to a weary soul, giving them memories that impart knowledge and experience.
-          </p>
-          </div>
-      </article>
-
-    </div><!-- /.portfolio-grid -->
-
-  </div><!-- /.portfolio-inner -->
-</div><!-- /.portfolio-section -->
+    </div>
+  </div>
+</div>
 
 <script>
   document.querySelectorAll('.port-toggle').forEach(function(btn) {
@@ -580,14 +543,14 @@ layout: page
       var card   = btn.closest('.port-card');
       var isOpen = card.classList.contains('is-open');
 
-      // Close all cards that have a toggle button
+      // Close all cards that have toggle
       document.querySelectorAll('.port-card').forEach(function(c) {
         c.classList.remove('is-open');
         var toggle = c.querySelector('.port-toggle');
         if (toggle) toggle.setAttribute('aria-expanded', 'false');
       });
 
-      // Open this one if it was closed
+      // Open this one if closed
       if (!isOpen) {
         card.classList.add('is-open');
         btn.setAttribute('aria-expanded', 'true');

@@ -4,23 +4,8 @@ category: "Egyptian Tomb Redux" # Change per page
 permalink: /projects/etr
 ---
 
-<!--
-  DEEP-DIVE PAGE TEMPLATE
-  ========================
-  Usage:
-  - Copy this file, rename it (e.g. quest-design.html or quest-design.md)
-  - Update the front matter above (title, category, hero image path)
-  - Replace placeholder text and media paths throughout
-  - Available section types:
-      .dd-media-block          — alternating image/video + text
-      .dd-media-block.flip     — forces media to the right side
-      .dd-pullquote            — large highlighted quote
-      .dd-credits              — tools/credits table at the bottom
--->
-
 <style>
 
-  /* ── Scoped reset ── */
   .deepdive *,
   .deepdive *::before,
   .deepdive *::after {
@@ -36,27 +21,25 @@ permalink: /projects/etr
     --accent:    #b5763a;
     --accent-lt: #d4935a;
     --white:     #f0e8db;
-    --navy:      #182430;   /* Hyde sidebar colour, used sparingly for cohesion */
+    --navy:      #182430;
   }
 
   .shadow-text {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   }
 
-  /* ── Full-bleed wrapper (same technique as hub page) ── */
   .deepdive {
     background: var(--bg);
     color: var(--text);
     font-family: 'Inconsolata', monospace;
     font-weight: 300;
 
-    width: 100vw;
+    width: 98vw;
     position: relative;
     left: 50%;
     margin-left: -50vw;
   }
 
-  /* ── Inner container — mirrors Hyde sidebar offsets ── */
   .deepdive-inner {
     width: 100%;
     padding: 0 2rem 6rem;
@@ -75,10 +58,6 @@ permalink: /projects/etr
       padding-right: 1rem;
     }
   }
-
-  /* ════════════════════════════════════════
-     HERO
-  ════════════════════════════════════════ */
 
   .dd-hero {
     position: relative;
@@ -109,7 +88,6 @@ permalink: /projects/etr
   border-right: none;
 }
 
-  /* Gradient fade at the bottom so the title reads cleanly */
   .dd-hero::after {
     content: '';
     position: absolute;
@@ -166,9 +144,6 @@ permalink: /projects/etr
     padding: 0 !important;
     text-shadow: 0 2px 20px rgba(0,0,0,0.6);
   }
-  /* ════════════════════════════════════════
-     INTRO / LEDE
-  ════════════════════════════════════════ */
 
   .dd-lede {
     max-width: 68ch;
@@ -193,10 +168,6 @@ permalink: /projects/etr
     margin: 0 0 0rem;
   }
 
-  /* ════════════════════════════════════════
-     MEDIA BLOCKS  (alternating layout)
-  ════════════════════════════════════════ */
-
   .dd-media-block {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -208,12 +179,9 @@ permalink: /projects/etr
   /* Default: media left, text right */
   .dd-media-block .dd-media-block-media { order: 1; }
   .dd-media-block .dd-media-block-text  { order: 2; }
-
-  /* .flip: media right, text left */
   .dd-media-block.flip .dd-media-block-media { order: 2; }
   .dd-media-block.flip .dd-media-block-text  { order: 1; }
 
-  /* Media container */
   .dd-media-block-media {
     position: relative;
     overflow: hidden;
@@ -239,7 +207,6 @@ permalink: /projects/etr
     transform: scale(1.02);
   }
 
-  /* Caption sits below the media inside the media container */
   .dd-caption {
     display: block;
     font-size: 0.65rem;
@@ -250,7 +217,6 @@ permalink: /projects/etr
     border-top: 1px solid var(--border);
     background: var(--surface);
   }
-
 
   .dd-media-block-text h2 {
     font-family: 'Playfair Display', serif !important;
@@ -288,7 +254,6 @@ permalink: /projects/etr
     margin-bottom: 0;
   }
 
-  /* Stack vertically on narrow viewports */
   @media (max-width: 47.99em) {
     .dd-media-block,
     .dd-media-block.flip {
@@ -315,7 +280,6 @@ permalink: /projects/etr
     background: var(--surface);
   }
 
-  /* Large decorative quotation mark */
   .dd-pullquote::before {
     content: '\201C';
     position: absolute;
@@ -352,10 +316,6 @@ permalink: /projects/etr
     color: var(--accent-lt);
     font-style: normal;
   }
-
-  /* ════════════════════════════════════════
-     CREDITS / TOOLS SECTION
-  ════════════════════════════════════════ */
 
   .dd-credits {
     margin-top: 6rem;
@@ -400,10 +360,6 @@ permalink: /projects/etr
     line-height: 1.4;
   }
 
-  /* ════════════════════════════════════════
-     BACK LINK
-  ════════════════════════════════════════ */
-
   .dd-back {
     display: inline-flex;
     align-items: center;
@@ -433,7 +389,6 @@ permalink: /projects/etr
     transform: translateX(-4px);
   }
 
-  /* ── Placeholder style (remove when using real media) ── */
   .dd-placeholder {
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -455,11 +410,7 @@ permalink: /projects/etr
 
 </style>
 
-<!-- ═══════════════════════════════════════════
-     HERO
-════════════════════════════════════════════ -->
 <div class="deepdive">
-
 <div class="dd-hero">
   <div class="dd-hero-strip">
     <div class="dd-hero-panel" style="background-image: url('/assets/img/ETPanel1.png')"></div>
@@ -474,14 +425,7 @@ permalink: /projects/etr
       <div class="shadow-text" style="font-size: 1rem; text-indent: 5px; font-family: 'Playfair Display', serif !important; color: var(white); !important;">Three minute read</div>  
   </div>
 </div>
-
-  <!-- ═══════════════════════════════════════════
-       BODY CONTENT
-  ════════════════════════════════════════════ -->
   <div class="deepdive-inner">
-    <!-- ════════════════════════════════════════
-         MEDIA BLOCK 1 — image left, text right
-    ════════════════════════════════════════ -->
     <div class="dd-media-block">
       <div class="dd-media-block-media">
         <video src="/assets/video/ET_ArkArt.MP4" autoplay muted playsinline></video>
@@ -496,9 +440,6 @@ permalink: /projects/etr
         <p>In time, however, game masters began to realize a strange recurring pattern that players took in the room. When players reached the third room, they often would lose track and go back to the first and second rooms, where most of the budget had gone. Even though the third area required no backtracking, game masters would give many hints to keep players’ attention focused. It became clear that the third room lacked something to keep players engaged.</p>
       </div>
     </div>
-    <!-- ════════════════════════════════════════
-         MEDIA BLOCK 2 — text left, image right (.flip)
-    ════════════════════════════════════════ -->
     <div class="dd-media-block flip">
       <div class="dd-media-block-media">
         <img src="/assets/img/ETDesignBoard.JPEG" alt="Photo of design notes on whiteboard">
@@ -510,9 +451,6 @@ permalink: /projects/etr
         <p>The Egyptian Tomb Redesign focused almost entirely on the third room. We edited the puzzles to be clearer, and we installed new tactile props with new puzzles. We repainted the walls a brilliant gold, and we coated them in ancient art, using icons from Sumerian cities, Göbekli Tepe, and other ancient locations. I took this opportunity to develop why the Ark of the Covenant would be found in an Egyptian Tomb- deciding that the Pharaoh who built the tomb was obsessed with collecting exotic art and materials.</p>
       </div>
     </div>
-    <!-- ════════════════════════════════════════
-         PULL QUOTE
-    ════════════════════════════════════════ -->
     <div class="dd-pullquote">
       <blockquote>
         <p>
@@ -521,9 +459,6 @@ permalink: /projects/etr
         <cite>— Kayla Steele, Google Review</cite>
       </blockquote>
     </div>
-    <!-- ════════════════════════════════════════
-         MEDIA BLOCK 3 — image left, text right
-    ════════════════════════════════════════ -->
     <div class="dd-media-block">
       <div class="dd-media-block-media">
         <img src="/assets/img/ETScroll.JPEG" alt="A scroll, translated into English after a short puzzle.">
@@ -535,26 +470,6 @@ permalink: /projects/etr
         <p>Immediately, we noticed the results. Game masters did not need to give as many hints, and we had an increase in the room’s victory rate- even after adding more complex puzzles to the room. For the first time, we had players requesting their victory photo be taken in the final area instead of the entrance. I cherish my time designing escape rooms because I got to immediately see the results of my work through the enjoyment of our customers. </p>
       </div>
     </div>
-    <!-- ════════════════════════════════════════
-         MEDIA BLOCK 2 — text left, image right (.flip)
-    ════════════════════════════════════════
-    <div class="dd-media-block flip">
-      <div class="dd-media-block-media">
-        <div class="dd-placeholder">Image / Video</div>
-        <img src="/assets/img/quest-02.jpg" alt="Description of image" />
-        <span class="dd-caption">Caption describing what the viewer is looking at</span>
-      </div>
-      <div class="dd-media-block-text">
-        <ul>
-        <li>Redesigned the room's first area to contain a constellation map centered around Thuban, the North Star of the Classical Age</li>
-        <li>Designed a puzzle based on the mythical Solar Barque, using a rotating wheel with magnetic sensors to chart the player's path</li>
-        <li>Added props written in Sumerian and Ottoman Turkish, notes from previous explorers and art taken by ancient pharoahs</li></ul>
-      </div>
-    </div>
--->
-    <!-- ════════════════════════════════════════
-         PULL QUOTE
-    ════════════════════════════════════════ -->
     <div class="dd-pullquote">
       <blockquote>
         <p>
@@ -563,6 +478,5 @@ permalink: /projects/etr
         <cite>— William Isenberg, Google Review</cite>
       </blockquote>
     </div>
-
-  </div><!-- /.deepdive-inner -->
-</div><!-- /.deepdive -->
+  </div>
+</div>

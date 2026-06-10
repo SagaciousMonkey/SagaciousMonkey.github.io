@@ -1,17 +1,10 @@
 ---
-layout: nocss
-title: Home
+layout: page
+title: About Me
 ---
 
-<!--
-  FONTS: Ensure this is in your _includes/head.html:
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inconsolata:wght@300;400&display=swap" rel="stylesheet" />
--->
 <style>
 
-  /* ══════════════════════════════════════════
-     SCOPED RESET
-  ══════════════════════════════════════════ */
   .home-page *,
   .home-page *::before,
   .home-page *::after {
@@ -30,11 +23,6 @@ title: Home
     --white:     #f0e8db;
   }
 
-  /* ══════════════════════════════════════════
-     OUTER WRAPPER
-     Full-bleed from viewport edge to edge,
-     sidebar offset handled per-section below.
-  ══════════════════════════════════════════ */
   .home-page {
     background: var(--bg);
     color: var(--text);
@@ -46,11 +34,6 @@ title: Home
     margin-left: -50vw;
   }
 
-  /* ══════════════════════════════════════════
-     SHARED INNER CONTAINER
-     Keeps content clear of Hyde's fixed sidebar.
-     Re-used by welcome and grid sections.
-  ══════════════════════════════════════════ */
   .home-inner {
     width: 100%;
     padding-left: 4rem;
@@ -70,9 +53,6 @@ title: Home
       padding-right: 1rem;
     }
   }
-  /* ══════════════════════════════════════════
-     1. DECORATIVE DIAGONAL STRIP
-  ══════════════════════════════════════════ */
 
   .home-strip {
     width: 100%;
@@ -80,16 +60,14 @@ title: Home
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    /* On desktop, indent past the sidebar */
   }
 
   @media (min-width: 48em) {
     .home-strip {
-      padding-left: 12rem; /* sidebar width — strip starts flush with content */
+      padding-left: 12rem;
     }
   }
 
-  /* ── Individual panel ── */
   .strip-panel {
     position: relative;
     flex: 1;
@@ -124,7 +102,6 @@ title: Home
     transform: scale(1.0);
   }
 
-  /* Placeholder tile for before real media is added */
   .strip-placeholder {
     width: 100%;
     height: 100%;
@@ -137,13 +114,6 @@ title: Home
     );
   }
 
-  /*
-   * ── Diagonal cuts via clip-path ──
-   * Panel 1: right edge diagonal
-   * Panel 2: parallelogram (both edges)
-   * Panel 3: left edge diagonal
-   * Negative margin-right creates overlap so cuts appear seamless.
-   */
   .strip-panel:nth-child(1) {
     clip-path: polygon(0% 0%, 108% 0%, 100% 100%, 0% 100%);
     margin-right: -4%;
@@ -165,7 +135,6 @@ title: Home
     z-index: 10;
   }
 
-  /* Simplify diagonal on narrow screens */
   @media (max-width: 47.99em) {
     .home-strip {
       padding-left: 0;
@@ -184,7 +153,6 @@ title: Home
     }
   }
 
-  /* Stack on mobile — diagonal cuts don't work well at very small widths */
   @media (max-width: 30em) {
     .home-strip {
       flex-direction: column;
@@ -202,11 +170,6 @@ title: Home
       border-bottom: 1px solid var(--border);
     }
   }
-
-
-  /* ══════════════════════════════════════════
-     2. WELCOME TEXT
-  ══════════════════════════════════════════ */
 
   .home-welcome {
     padding: 1.5rem 1rem;
@@ -240,7 +203,6 @@ title: Home
     padding: 0;
   }
 
-  /* Thin rule separating welcome from grid */
   .home-divider {
     border: none;
     border-top: 1px solid var(--border);
@@ -252,7 +214,7 @@ title: Home
   gap: 1rem;
   margin-top: 1.75rem;
   flex-wrap: wrap;
-  padding-left: 4rem;
+  padding-left: 1rem;
   }
 
   .home-btn {
@@ -277,7 +239,7 @@ title: Home
   color: var(--bg) !important;
   text-decoration: none !important;
   }
-/* Ghost variant — outlined, no fill */
+
   .home-btn--ghost {
   background: transparent;
   color: var(--accent-lt) !important;
@@ -287,11 +249,6 @@ title: Home
   background: var(--accent);
   color: var(--bg) !important;
   }
-
-
-  /* ══════════════════════════════════════════
-     3. SELECTED WORK SECTION HEADER
-  ══════════════════════════════════════════ */
 
   .port-label {
     font-size: 0.7rem;
@@ -312,11 +269,6 @@ title: Home
     border-bottom: 1px solid var(--border);
   }
 
-
-  /* ══════════════════════════════════════════
-     4. CARD GRID
-  ══════════════════════════════════════════ */
-
   .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -325,7 +277,6 @@ title: Home
     align-items: start;
   }
 
-  /* ── Card ── */
   .port-card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -338,7 +289,6 @@ title: Home
     border-color: var(--accent);
   }
 
-  /* ── Media ── */
   .port-media {
     position: relative;
     width: 100%;
@@ -398,7 +348,6 @@ title: Home
     );
   }
 
-  /* ── Card body ── */
   .port-body {
     padding: 1.5rem;
     display: flex;
@@ -433,7 +382,6 @@ title: Home
     margin: 0;
   }
 
-  /* ── Toggle button ── */
   .port-toggle {
     display: inline-flex;
     align-items: center;
@@ -467,7 +415,6 @@ title: Home
     transform: rotate(180deg);
   }
 
-  /* ── Accordion drawer ── */
   .port-drawer {
     max-height: 0;
     overflow: hidden;
@@ -542,11 +489,6 @@ title: Home
     transform: translateX(3px);
   }
 
-
-  /* ══════════════════════════════════════════
-     RESPONSIVE
-  ══════════════════════════════════════════ */
-
   /* Tablet: 2-col grid */
   @media (max-width: 47.99em) {
     .portfolio-grid {
@@ -592,7 +534,6 @@ title: Home
     }
   }
 
-  /* Bottom padding on the whole page */
   .home-grid-section {
     padding-bottom: 5rem;
   }
@@ -600,13 +541,6 @@ title: Home
 </style>
 
 <div class="home-page">
-
-  <!-- ════════════════════════════════════════
-       1. DECORATIVE DIAGONAL STRIP
-       No text, no links — purely atmospheric.
-       Replace .strip-placeholder divs with your
-       images or videos when ready.
-  ════════════════════════════════════════ -->
   <div class="home-strip" aria-hidden="true">
     <div class="strip-panel">
       <div class="strip-panel-media">
@@ -623,24 +557,21 @@ title: Home
         <img src="/assets/img/mountainsandme.jpg" alt="">
       </div>
     </div>
-
-  </div><!-- /.home-strip -->
-
-  <!-- ════════════════════════════════════════
-       2. WELCOME TEXT
-  ════════════════════════════════════════ -->
+  </div>
   <div class="home-inner">
     <div class="home-welcome">
       <p class="home-welcome-bio">
-        Hey there! I'm a traveled designer and writer. I've renovated and built escape rooms, created characters and storylines to keep players invested, and maintained networks that pass my creativity and passion to my teammates.</p>
+        Hey there! I'm a designer and writer. I've renovated and built escape rooms, created characters and storylines to keep players invested, and maintained networks that pass my creativity and passion to my teammates.</p>
+        <br>
       <p class="home-welcome-bio">I'm currently looking for opportunities in games, where I continue to develop game jams and scripts.
       </p>
       <div class="home-buttons">
         <a class="home-btn" href="/projects">Projects</a>
-        <a class="home-btn home-btn--ghost" href="/about">About Me</a>
+        <a class="home-btn home-btn--ghost" href="/about">Fiction</a>
+        <a class="home-btn home-btn--ghost" href="/about">Resume</a>
     </div>
   </div>
-</div><!-- /.home-page -->
+</div>
 
 <script>
   document.querySelectorAll('.port-toggle').forEach(function(btn) {
@@ -654,7 +585,7 @@ title: Home
         c.querySelector('.port-toggle').setAttribute('aria-expanded', 'false');
       });
 
-      // Open this one if it was closed
+      // Open this one if closed
       if (!isOpen) {
         card.classList.add('is-open');
         btn.setAttribute('aria-expanded', 'true');
