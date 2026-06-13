@@ -1,5 +1,5 @@
 ---
-layout: nocss
+layout: page
 category: "Short Story, ~20 min read" # Change per page
 hero: # Path to your hero image
 permalink: /fiction/short-story
@@ -28,10 +28,6 @@ permalink: /fiction/short-story
     box-sizing: border-box;
   }
 
-  p {
-    text-indent: 50px;
-  }
-
   :root {
     --bg:        #0e0d0c;
     --surface:   #161412;
@@ -44,56 +40,50 @@ permalink: /fiction/short-story
     --white:     #f0e8db;
   }
 
-  /* ── Full-bleed wrapper (same technique as hub page) ── */
   .deepdive {
     background: var(--bg);
     color: var(--text);
     font-family: 'Inconsolata', monospace;
     font-weight: 300;
 
-    width: 100vw;
+    width: 100%;
     position: relative;
-    left: 75%;
-    margin-left: -50vw;
   }
 
-  /* ── Inner container — SPECIAL FOR SHORT STORY */
   .deepdive-inner {
     width: 100%;
-    text-align:left
+    padding: 2rem 2rem 2rem;
   }
 
   @media (min-width: 48em) {
     .deepdive-inner {
-      padding-left: 22rem;
-      padding-right: 3rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
   }
 
   @media (min-width: 64em) {
     .deepdive-inner {
-      padding-left: 24rem;
-      padding-right: 5rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
   }
-
   /* ════════════════════════════════════════
      HERO
   ════════════════════════════════════════ */
 
-  .dd-hero {
+.dd-hero {
     position: relative;
     width: 100%;
-    height: clamp(280px, 50vh, 520px);
+    /*Changed third height variable to shorten length of hero at top of page */
+    height: clamp(280px, 50vh, 300px);
     overflow: hidden;
     margin-bottom: 0;
-  }
+}
 
-  .port-hero {
-  width: 100vw;
+.port-hero {
+  width: 100%;
   position: relative;
-  left: 50%;
-  margin-left: -50vw;
   height: clamp(160px, 15vw, 20vw);
   overflow: hidden;
   background: var(--surface);
@@ -132,25 +122,12 @@ permalink: /fiction/short-story
   }
 
   .dd-hero-text {
-    position: absolute;
-    bottom: 2.5rem;
+    bottom: 5rem;
     left: 2rem;
     right: 2rem;
     z-index: 2;
-  }
-
-  @media (min-width: 48em) {
-    .dd-hero-text {
-      left: 22rem;
-      right: 3rem;
-    }
-  }
-
-  @media (min-width: 64em) {
-    .dd-hero-text {
-      left: 24rem;
-      right: 5rem;
-    }
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
   }
 
   .dd-hero-category {
@@ -181,19 +158,16 @@ permalink: /fiction/short-story
     text-shadow: 0 2px 20px rgba(0,0,0,0.6);
   }
 
-  /* ════════════════════════════════════════
-     INTRO / LEDE
-  ════════════════════════════════════════ */
-
   .dd-lede {
-    max-width: 80ch;
+    text-indent: 50px;
+    max-width: 80vw;
     margin: 3rem 0 4rem;
   }
 
   .dd-lede p {
     font-size: 1rem;
     line-height: 1.8;
-    color: var(--text);
+    color: white;
     margin: 0 0 1rem;
   }
 
@@ -207,10 +181,6 @@ permalink: /fiction/short-story
     border-top: 1px solid var(--border);
     margin: 0 0 4rem;
   }
-
-  /* ════════════════════════════════════════
-     MEDIA BLOCKS  (alternating layout)
-  ════════════════════════════════════════ */
 
   .dd-media-block {
     display: grid;
@@ -288,7 +258,7 @@ permalink: /fiction/short-story
   }
 
   /* Stack vertically on narrow viewports */
-  @media (max-width: 47.99em) {
+  @media {
     .dd-media-block,
     .dd-media-block.flip {
       grid-template-columns: 1fr;
@@ -301,10 +271,6 @@ permalink: /fiction/short-story
     .dd-media-block .dd-media-block-text,
     .dd-media-block.flip .dd-media-block-text  { order: 2; }
   }
-
-  /* ════════════════════════════════════════
-     PULL QUOTE
-  ════════════════════════════════════════ */
 
   .dd-pullquote {
     position: relative;
@@ -352,10 +318,6 @@ permalink: /fiction/short-story
     font-style: normal;
   }
 
-  /* ════════════════════════════════════════
-     CREDITS / TOOLS SECTION
-  ════════════════════════════════════════ */
-
   .dd-credits {
     margin-top: 6rem;
     padding-top: 2rem;
@@ -398,10 +360,6 @@ permalink: /fiction/short-story
     color: var(--white);
     line-height: 1.4;
   }
-
-  /* ════════════════════════════════════════
-     BACK LINK
-  ════════════════════════════════════════ */
 
   .dd-back {
     display: inline-flex;
@@ -451,16 +409,17 @@ permalink: /fiction/short-story
     );
   }
 </style>
+
 <div class="deepdive">
   <div class="dd-hero">
     <div class="port-hero-img"></div>
+  </div>
+  <div class="deepdive-inner">
     <div class="dd-hero-text">
       <span class="dd-hero-category">Short Story, ~20 minute read</span>
       <h1 class="dd-hero-title">Thieves of the Orchard</h1>
       <h4 class="dd-hero-subtitle">Winner of the El Portal Space Western Award</h4>
     </div>
-  </div>
-  <div class="deepdive-inner">
     <a class="dd-back" href="/fiction">Back to Portfolio</a>
     <div class="dd-lede">
       <p>

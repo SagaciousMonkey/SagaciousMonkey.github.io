@@ -1,5 +1,5 @@
 ---
-layout: nocss
+layout: page
 category: "Egyptian Tomb Redux" # Change per page
 permalink: /projects/etr
 ---
@@ -34,28 +34,26 @@ permalink: /projects/etr
     font-family: 'Inconsolata', monospace;
     font-weight: 300;
 
-    width: 98vw;
+    width: 100%;
     position: relative;
-    left: 50%;
-    margin-left: -50vw;
   }
 
   .deepdive-inner {
     width: 100%;
-    padding: 0 2rem 6rem;
+    padding: 2rem 2rem 2rem;
   }
 
   @media (min-width: 48em) {
     .deepdive-inner {
-      padding-left: 13rem;
-      padding-right: 1rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
   }
 
   @media (min-width: 64em) {
     .deepdive-inner {
-      padding-left: 14rem;
-      padding-right: 1rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
   }
 
@@ -173,7 +171,7 @@ permalink: /projects/etr
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
 
   /* Default: media left, text right */
@@ -267,10 +265,6 @@ permalink: /projects/etr
     .dd-media-block .dd-media-block-text,
     .dd-media-block.flip .dd-media-block-text  { order: 2; }
   }
-
-  /* ════════════════════════════════════════
-     PULL QUOTE
-  ════════════════════════════════════════ */
 
   .dd-pullquote {
     position: relative;
@@ -413,7 +407,7 @@ permalink: /projects/etr
 <div class="deepdive">
 <div class="dd-hero">
   <div class="dd-hero-strip">
-    <div class="dd-hero-panel" style="background-image: url('/assets/img/ETPanel1.png')"></div>
+    <div class="dd-hero-panel" style="background-image: url('/assets/img/Egypt_torch.png')"></div>
     <div class="dd-hero-panel" style="background-image: url('/assets/img/ETPanel2.JPEG')"></div>
     <div class="dd-hero-panel" style="background-image: url('/assets/img/gobleki.JPEG')"></div>
     <div class="dd-hero-panel" style="background-image: url('/assets/img/ETSun.JPEG')"></div>

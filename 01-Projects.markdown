@@ -36,10 +36,8 @@ permalink: /projects
 }
 
 .port-hero {
-  width: 100vw;
+  width: 100%;
   position: relative;
-  left: 50%;
-  margin-left: -50vw;
   height: clamp(160px, 15vw, 20vw);
   overflow: hidden;
   background: var(--surface);
@@ -122,6 +120,7 @@ permalink: /projects
 @media (max-width: 30em) {
   .port-hero {
     height: 160px;
+    width; 100%;
   }
   .port-hero-text {
     top: 1.25rem;
@@ -176,16 +175,12 @@ permalink: /projects
     --white:     #f0e8db;
   }
 
-  .portfolio-section {
-    background: var(--bg);
-   color: var(--text);
-    font-family: 'Inconsolata', monospace;
-    font-weight: 300;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    margin-left: -50vw;
-    padding: 2rem 0.5rem;  /* was 4rem 2rem */
+.portfolio-section {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inconsolata', monospace;
+  font-weight: 300;
+  padding: 1rem 1rem;
 }
 
 .portfolio-inner {
@@ -194,15 +189,11 @@ permalink: /projects
 
 @media (min-width: 48em) {
   .portfolio-inner {
-    padding-left: 13rem;  
-    padding-right: 1rem;
   }
 }
 
 @media (min-width: 64em) {
   .portfolio-inner {
-    padding-left: 14rem;  
-    padding-right: 1rem;
   }
 }
   .port-label {
@@ -225,7 +216,7 @@ permalink: /projects
 
   .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: auto auto auto;
     gap: 2px;
     width: 100%;
   }
@@ -448,16 +439,16 @@ permalink: /projects
   }
 
 /* Wide desktop — 4 cols */
-@media (min-width: 64em) {
+@media (min-width: 72em) {
   .portfolio-grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 /* Mid desktop with sidebar — 3 cols */
-@media (min-width: 48em) and (max-width: 63.99em) {
+@media (min-width: 48em) and (max-width: 71.99em) {
   .portfolio-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -480,7 +471,6 @@ permalink: /projects
 <div class="port-hero">
   <div class="port-hero-img"></div>
 </div>
-
 <div class="portfolio-section">
   <div class="portfolio-inner">
     <div class="portfolio-grid">

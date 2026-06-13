@@ -35,16 +35,9 @@ permalink: /fiction
   display: none;
 }
 
-
-/* ══════════════════════════════════════════
-   PORTFOLIO HERO
-══════════════════════════════════════════ */
-
 .port-hero {
-  width: 100vw;
+  width: 100%;
   position: relative;
-  left: 50%;
-  margin-left: -50vw;
   height: clamp(160px, 15vw, 20vw);
   overflow: hidden;
   background: var(--surface);
@@ -127,6 +120,7 @@ permalink: /fiction
 @media (max-width: 30em) {
   .port-hero {
     height: 160px;
+    width; 100%;
   }
   .port-hero-text {
     top: 1.25rem;
@@ -182,34 +176,16 @@ permalink: /fiction
   }
 
 
-  .portfolio-section {
-    background: var(--bg);
-   color: var(--text);
-    font-family: 'Inconsolata', monospace;
-    font-weight: 300;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    margin-left: -50vw;
-    padding: 2rem 0.5rem;  /* was 4rem 2rem */
+.portfolio-section {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inconsolata', monospace;
+  font-weight: 300;
+  padding: 1rem 1rem;
 }
 
 .portfolio-inner {
   width: 100%;
-}
-
-@media (min-width: 48em) {
-  .portfolio-inner {
-    padding-left: 13rem; 
-    padding-right: 1rem;
-  }
-}
-
-@media (min-width: 64em) {
-  .portfolio-inner {
-    padding-left: 14rem;
-    padding-right: 1rem;
-  }
 }
 
   .port-label {
@@ -232,7 +208,7 @@ permalink: /fiction
 
   .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: auto auto auto;
     gap: 2px;
     width: 100%;
   }
@@ -319,23 +295,12 @@ permalink: /fiction
   }
 
   .port-category {
-    font-size: 0.8rem;
-    letter-spacing: .1em;
+    font-size: 0.62rem;
+    letter-spacing: 0.22em;
     text-transform: uppercase;
     color: var(--accent);
     margin: 0;
     padding: 0;
-  }
-
-  .sub-port-category {
-    display: flex;
-    font-size: 0.7rem;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    color: var(--accent-lt);
-    margin: 0;
-    padding: 0;
-    justify-content: center;
   }
 
   .port-card-title {
@@ -405,6 +370,7 @@ permalink: /fiction
     padding: 1rem 1.5rem 1.25rem;
   }
 
+  /* Drawer heading */
   .port-drawer-label {
     font-size: 0.58rem;
     letter-spacing: 0.25em;
@@ -414,6 +380,7 @@ permalink: /fiction
     padding: 0;
   }
 
+  /* Sub-link list */
   .port-drawer-links {
     list-style: none;
     margin: 0;
@@ -463,29 +430,29 @@ permalink: /fiction
     transform: translateX(3px);
   }
 
-  /* Wide desktop — 4 cols */
-  @media (min-width: 64em) {
-    .portfolio-grid {
-      grid-template-columns: repeat(4, 1fr);
-    }
+/* Wide desktop — 4 cols */
+@media (min-width: 64em) {
+  .portfolio-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
+}
 
-  /* Mid desktop with sidebar — 3 cols */
-  @media (min-width: 48em) and (max-width: 63.99em) {
-    .portfolio-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
+/* Mid desktop with sidebar — 3 cols */
+@media (min-width: 48em) and (max-width: 63.99em) {
+  .portfolio-grid {
+    grid-template-columns: repeat(1, 1fr);
   }
+}
 
-  /* Tablet — 2 cols */
-  @media (max-width: 47.99em) {
-    .portfolio-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
+/* Tablet — 2 cols */
+@media (max-width: 47.99em) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  /* Mobile — 1 col */
-  @media (max-width: 30em) {
+/* Mobile — 1 col */
+@media (max-width: 30em) {
   .portfolio-grid {
     grid-template-columns: 1fr;
   }

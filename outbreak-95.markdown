@@ -1,28 +1,31 @@
 ---
-layout: nocss
+layout: page
 category: "Outbreak '95" # Change per page
 permalink: /projects/ob95
 ---
 
 <style>
 
-  /* ── Scoped reset ── */
   .deepdive *,
   .deepdive *::before,
   .deepdive *::after {
     box-sizing: border-box;
   }
 
-   :root {
+  :root {
     --bg:        #0e0d0c;
     --surface:   #161412;
-    --surface2: #1c1916;
     --border:    #2a2520;
     --text:      #c9b99a;
-    --muted:     #47475e;
-    --accent:    #299fce;
-    --accent-lt: #4b8faa;
+    --muted:     #5e5347;
+    --accent:    #b5763a;
+    --accent-lt: #d4935a;
     --white:     #f0e8db;
+    --navy:      #182430;
+  }
+
+  .shadow-text {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
   }
 
   .deepdive {
@@ -30,45 +33,37 @@ permalink: /projects/ob95
     color: var(--text);
     font-family: 'Inconsolata', monospace;
     font-weight: 300;
-    width: 98vw;
+
+    width: 100%;
     position: relative;
-    left: 50%;
-    margin-left: -50vw;
   }
 
   .deepdive-inner {
     width: 100%;
-    padding: 0 2rem 6rem;
+    padding: 2rem 2rem 2rem;
   }
 
   @media (min-width: 48em) {
     .deepdive-inner {
-      padding-left: 13rem;
-      padding-right: 1rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
   }
 
   @media (min-width: 64em) {
     .deepdive-inner {
-      padding-left: 14rem;
-      padding-right: 1rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
   }
-
-  /* ════════════════════════════════════════
-     HERO
-  ════════════════════════════════════════ */
 
   .dd-hero {
     position: relative;
     width: 100%;
+    /*Changed third height variable to shorten length of hero at top of page */
     height: clamp(280px, 50vh, 300px);
     overflow: hidden;
     margin-bottom: 0;
-  }
-
-  .shadow-text {
-    text-shadow: 2px 2px rgba(50, 47, 85, 0.7);
   }
 
 .dd-hero-strip {
@@ -97,9 +92,9 @@ permalink: /projects/ob95
     inset: 0;
     background: linear-gradient(
     to bottom,
-    rgba(12, 12, 14, 0.25) 20%,
+    rgba(0, 0, 0, 0.25) 40%,
     transparent 50%,
-    rgba(12, 12, 14, 0.6) 100%,
+    rgba(0, 0, 0, 0.6) 80%,
     var(--bg) 100%
     );
     pointer-events: none;
@@ -145,7 +140,7 @@ permalink: /projects/ob95
     line-height: 1.1 !important;
     margin: 0 !important;
     padding: 0 !important;
-    text-shadow: 2px 2px 20px rgba(0,0,0,0.6);
+    text-shadow: 0 2px 20px rgba(0,0,0,0.6);
   }
 
   .dd-lede {
@@ -176,14 +171,12 @@ permalink: /projects/ob95
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
 
   /* Default: media left, text right */
   .dd-media-block .dd-media-block-media { order: 1; }
   .dd-media-block .dd-media-block-text  { order: 2; }
-
-  /* .flip: */
   .dd-media-block.flip .dd-media-block-media { order: 2; }
   .dd-media-block.flip .dd-media-block-text  { order: 1; }
 
@@ -198,13 +191,12 @@ permalink: /projects/ob95
   .dd-media-block-media img,
   .dd-media-block-media video,
   .dd-media-block-media iframe {
-    width: clamp(50%, 90%, 200%);
+    width: 100%;
     display: block;
     margin: 0;
     border-radius: 0;
     filter: brightness(0.85) saturate(0.75);
     transition: filter 0.4s ease, transform 0.5s ease;
-    justify-content: center;
   }
 
   .dd-media-block-media:hover img,
