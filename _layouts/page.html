@@ -59,14 +59,14 @@
             const textLength = texts[currentIndex].length;
             let fontSize = baseFontSize;
 
-            if (textLength > 35) {
-              fontSize = baseFontSize * 0.5;
+            if (textLength > 40) {
+              fontSize = baseFontSize * 0.3;
             } else if (textLength > 25) {
-              fontSize = baseFontSize * 0.6;
+              fontSize = baseFontSize * 0.4;
             } else if (textLength > 20) {
+              fontSize = baseFontSize * 0.8;
+            } else if (textLength > 10) {
               fontSize = baseFontSize * 0.7;
-            } else if (textLength > 15) {
-              fontSize = baseFontSize * 0.85;
             }
 
             this.style.fontSize = fontSize + "rem";
