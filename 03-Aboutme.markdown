@@ -119,6 +119,6 @@ permalink: /about-me
   <div class="home-buttons">
     <a class="home-btn" href="/projects">Projects</a>
     <a class="home-btn home-btn--ghost" href="/fiction">Fiction</a>
-    <a class="home-btn home-btn--ghost" href="/resume">Resume</a>
+    <a class="home-btn home-btn--ghost" href="/Resume">Resume</a>
   </div>
 </div>

@@ -30,6 +30,10 @@ permalink: /projects/gj
 
   .shadow-text {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 1.3rem;
+    text-indent: 5px;
+    serif !important;
+    color: var(white);
   }
 
   .deepdive {
@@ -137,11 +141,10 @@ permalink: /projects/gj
   }
 
   .dd-hero-title {
-    font-family: 'Playfair Display', serif !important;
     font-size: clamp(2rem, 5vw, 3.8rem) !important;
-    font-weight: 500 !important;
+    font-weight: 300 !important;
     color: var(--white) !important;
-    line-height: 1.1 !important;
+    line-height: 1.2 !important;
     margin: 0 !important;
     padding: 0 !important;
     text-shadow: 0 2px 20px rgba(0,0,0,0.6);
@@ -434,7 +437,7 @@ permalink: /projects/gj
   <div class="dd-hero-text">
     <a class="dd-back" href="/projects">Back to Projects</a>
     <h1 class="dd-hero-title">Game Jams</h1>
-      <div class="shadow-text" style="font-size: 1rem; text-indent: 5px; font-family: 'Playfair Display', serif !important; color: var(white); !important;">Three minute read</div>  
+      <div class="shadow-text">Three minute read</div>  
   </div></div>
 
 <div class="deepdive-inner">
