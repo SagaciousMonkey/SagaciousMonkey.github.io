@@ -469,7 +469,7 @@ permalink: /fiction
       <article class="port-card" id="card-quest">
         <div class="port-body">
           <span class="port-category">Flash Fiction</span>
-          <h2 class="port-card-title"><a href="/fiction/flash-fiction">The Salt Beneath the Sea</a></h2>
+          <h2 class="port-card-title"><a href="/fiction/tsbts">The Salt Beneath the Sea</a></h2>
             <span class="sub-port-category">Five minute read</span>
           <br>
           <p class="port-desc">
@@ -480,7 +480,7 @@ permalink: /fiction
       <article class="port-card" id="card-narrative">
         <div class="port-body" align-items="middle">
           <span class="port-category">Short Story</span>
-          <h2 class="port-card-title"><a href="/fiction/short-story">Thieves of the Orchard</a></h2>
+          <h2 class="port-card-title"><a href="/fiction/toto">Thieves of the Orchard</a></h2>
             <span class="sub-port-category">Fifteen minute read</span>
           <br>
           <p class="port-desc">

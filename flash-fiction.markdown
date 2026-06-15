@@ -2,7 +2,7 @@
 layout: page
 category: "Flash Fiction, ~15 min read" # Change per page
 hero: # Path to your hero image
-permalink: /fiction/flash-fiction
+permalink: /fiction/tsbts
 ---
 
 <!--

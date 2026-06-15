@@ -2,7 +2,7 @@
 layout: page
 category: "Short Story, ~20 min read" # Change per page
 hero: # Path to your hero image
-permalink: /fiction/short-story
+permalink: /fiction/toto
 ---
 
 <!--

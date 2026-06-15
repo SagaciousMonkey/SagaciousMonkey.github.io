@@ -1,7 +1,7 @@
 ---
 layout: page
-category: "Egyptian Tomb Redux" # Change per page
-permalink: /projects/etr
+category: "Game Jams" # Change per page
+permalink: /projects/gj
 ---
 
 <style>
@@ -22,6 +22,10 @@ permalink: /projects/etr
     --accent-lt: #d4935a;
     --white:     #f0e8db;
     --navy:      #182430;
+  }
+
+  .centered {
+    text-align: center;
   }
 
   .shadow-text {
@@ -216,6 +220,20 @@ permalink: /projects/etr
     background: var(--surface);
   }
 
+  .dd-intro {
+    line-height: 1.85;
+    align-items:center;
+    text-align:center;
+    justify-items:center;
+  }
+
+  .dd-intro p{
+    width:80%;
+    align-items:center;
+    text-align:center;
+    justify-items:center;
+  }  
+
   .dd-media-block-text h2 {
     font-family: 'Playfair Display', serif !important;
     font-size: clamp(1.2rem, 2vw, 1.6rem) !important;
@@ -407,70 +425,66 @@ permalink: /projects/etr
 <div class="deepdive">
 <div class="dd-hero">
   <div class="dd-hero-strip">
-    <div class="dd-hero-panel" style="background-image: url('/assets/img/Egypt_torch.png')"></div>
-    <div class="dd-hero-panel" style="background-image: url('/assets/img/ETPanel2.JPEG')"></div>
-    <div class="dd-hero-panel" style="background-image: url('/assets/img/gobleki.JPEG')"></div>
-    <div class="dd-hero-panel" style="background-image: url('/assets/img/ETSun.JPEG')"></div>
-    <div class="dd-hero-panel" style="background-image: url('/assets/img/ETPanel5.jpg')"></div>
+    <div class="dd-hero-panel" style="background-image: url('/assets/img/gj1.png')"></div>
+    <div class="dd-hero-panel" style="background-image: url('/assets/img/gj2.png')"></div>
+    <div class="dd-hero-panel" style="background-image: url('/assets/img/soggymeter.png')"></div>
+    <div class="dd-hero-panel" style="background-image: url('/assets/img/gj5.png')"></div>
+    <div class="dd-hero-panel" style="background-image: url('/assets/img/gj4.png')"></div>
   </div>
   <div class="dd-hero-text">
     <a class="dd-back" href="/projects">Back to Projects</a>
-    <h1 class="dd-hero-title">Egyptian Tomb Redux</h1>
+    <h1 class="dd-hero-title">Game Jams</h1>
       <div class="shadow-text" style="font-size: 1rem; text-indent: 5px; font-family: 'Playfair Display', serif !important; color: var(white); !important;">Three minute read</div>  
-</div></div>
+  </div></div>
 
 <div class="deepdive-inner">
+    <div class="dd-media-block-text">
+      <p>I love entering game jams! Designing new rooms at EscapeWorks meant we would plan for new experiences for weeks, and go into intense detail so constructing new rooms would take as little time as possible. I still retain those detail-oriented skills, but game jams push the envelope so I don’t get the luxury of weeks, only days!</p>
+      <p>So far, each of the jams I’ve done have pushed me to make better and better content, and with each one I’ve found new elements to develop for future games. </p>
+      <br>
+      </div>
     <div class="dd-media-block">
       <div class="dd-media-block-media">
-        <video src="/assets/video/ET_ArkArt.MP4" autoplay muted playsinline></video>
-        <span class="dd-caption">Originally, the inside of the ark said "The Riddle of the Sphinx," but... had nothing to do with a man walking on three legs.</span>
+        <img src="/assets/img/CCC2.png" alt="A big chicken monster destroying a city">
+        <span class="dd-caption">American Kaiju was designed to be a mix of Rampage and Donkey Kong Country- juggling physics-based movement and city destruction</span>
       </div>
-      <div class="dd-media-block-text">
-        <h3>Historical Research, Environment, Prop, and Puzzle Design</h3>
-        <br>
-        <p>
-        When Egyptian Tomb was first constructed, it was designed to excite players immediately as they entered. Atmospheric lighting with flickering electric torches, large altars with ornate hieroglyphic carvings, and three inches of sand along the floor all worked to hook players into an immersive experience.</p>
-        <br>
-        <p>In time, however, game masters began to realize a strange recurring pattern that players took in the room. When players reached the third room, they often would lose track and go back to the first and second rooms, where most of the budget had gone. Even though the third area required no backtracking, game masters would give many hints to keep players’ attention focused. It became clear that the third room lacked something to keep players engaged.</p>
+    <div class="dd-media-block-text">
+        <h3 class="centered">American Kaiju: <i>HARDBOILED</i></h3>
+        <p>American Kaiju was a fun week-long jam I tackled with three friends. The jam had a very open-ended theme, so a buddy in the Discord suggested a sub-theme for us.</p>
+        <p>“Chicken,” he said. </p>
+        <p>"Chicken?"</p>
+        <p>Our other immediate drafts and ideas were thrown out. We had been given a strange new challenge. One we couldn’t back down from! To do so would be chi-</p>
+        <p>Excuse me. …To do so would be a <i>sign of extreme cowardice.</i></p>
       </div>
     </div>
     <div class="dd-media-block flip">
       <div class="dd-media-block-media">
-        <img src="/assets/img/ETDesignBoard.JPEG" alt="Photo of design notes on whiteboard">
-        <span class="dd-caption">My design process was collaborative; I would openly display my notes and thoughts and take input from our game masters.</span>
+        <img src="/assets/img/shellshook.png" alt="A chicken stares ahead, now truly understanding the depths of loss.">
+        <span class="dd-caption">Had I ever truly lived before I studied how a chicken walks for three hours? Clearly my life was missing this essential experience</span>
       </div>
       <div class="dd-media-block-text">
-        <p>In the original design, the third area contained a rotating pillar and a prop resembling Hollywood’s Ark of the Covenant. The Ark was meant to hold gravitas on its own merit, so very little else was installed in the third room. This, however, meant the room was barren- sparse wall decoration, less sand on the ground, and a lack of puzzles meant players would often return to the previous two areas.</p>
-        <br>
-        <p>The Egyptian Tomb Redesign focused almost entirely on the third room. We edited the puzzles to be clearer, and we installed new tactile props with new puzzles. We repainted the walls a brilliant gold, and we coated them in ancient art, using icons from Sumerian cities, Göbekli Tepe, and other ancient locations. I took this opportunity to develop why the Ark of the Covenant would be found in an Egyptian Tomb- deciding that the Pharaoh who built the tomb was obsessed with collecting exotic art and materials.</p>
+        <p>American Kaiju, like most game jams, tested our teamwork, our ability to maintain consistency, and our confidence to commit to release. On the team, I was the jack-of-all-trades manager, and I oversaw programming, art, and the story. Giving our rooster kaiju protagonist a voice was a challenge, but I storyboarded intro and outro sequences that gave the experience flavor.</p>
+        <p>It also tested the design skills I sharpened in my escape room days. Simply put, we had many ideas, but a very limited window for completion. Scope is a gigantic challenge in its own right, but my experiences planning how I could reformat an escape room in two days helped give me the vision to keep things simple here, too. We kept our priorities and released on time.</p>
       </div>
     </div>
-    <div class="dd-pullquote">
-      <blockquote>
-        <p>
-        We did the Egyptian Tomb room, and it was so detailed. We have done many other escape rooms and none have been this immersive as far as decor and even the puzzles. (They) were so unique and unlike any escape room we've done in the past.
-        </p>
-        <cite>— Kayla Steele, Google Review</cite>
-      </blockquote>
-    </div>
-    <div class="dd-media-block">
+      <div class="dd-media-block">
       <div class="dd-media-block-media">
-        <img src="/assets/img/ETScroll.JPEG" alt="A scroll, translated into English after a short puzzle.">
-        <span class="dd-caption">The names are all that is needed, but the text below push the theme of the puzzle... the voyage of the soul.</span>
+        <img src="/assets/img/ladyfingers.png" alt="A blue demon admits their love of collecting sweet biscuits.">
+        <span class="dd-caption">Retro game assets help keep the project focused. As always, I make all my own art.</span>
       </div>
-      <div class="dd-media-block-text">
-        <p>
-        To further the themes of exotic cultures in the Tomb, I developed a scroll that carried that necessary information for the game’s final puzzle. It was written in a script resembling Ottoman-Turkish, suggesting how other explorers from the 1800s (perhaps from the Egyptian-Ottoman War) attempted and failed to solve the puzzle they were about to attempt. Players found scraps of an English translation another explorer left behind.</p>
-        <p>Immediately, we noticed the results. Game masters did not need to give as many hints, and we had an increase in the room’s victory rate- even after adding more complex puzzles to the room. For the first time, we had players requesting their victory photo be taken in the final area instead of the entrance. I cherish my time designing escape rooms because I got to immediately see the results of my work through the enjoyment of our customers. </p>
+    <div class="dd-media-block-text">
+        <h3 class="centered">Hungry for a Biscuit</h3>
+        <p>After learning the skills I needed to publish a finished Godot game, I was eager to try again, so I pushed myself to do a solo game jam. I submitted Hungry for a Biscuit to the Brackeys Game Jam 2025.2, making the step from 2D to 3D. Hungry took the jam’s theme, “Risk it for the Biscuit,” to a far too literal level, but I had a blast making it. The game gave me the skills I wanted for other projects, like 3D environment work, and it also made me learn how to incorporate a “Soggy Meter.”</p>
       </div>
     </div>
-    <div class="dd-pullquote">
-      <blockquote>
-        <p>
-        The puzzles were challenging and satisfying to solve. If you love translating hieroglyphic messages, answering poetic riddles, and solving physical puzzles, this is definitely the room for you!
-        </p>
-        <cite>— William Isenberg, Google Review</cite>
-      </blockquote>
+    <div class="dd-media-block flip">
+      <div class="dd-media-block-media"> 
+        <img src="/assets/img/museo.png" alt="A blue collar worker standing in a strange museum.">
+        <span class="dd-caption">Future project... I love the aesthetic of sprites and 3D models, especially if they can blend together to evoke retro-futurism.</span>
+      </div>
+      <div class="dd-media-block-text">
+        <p>While the game was simple, I was happy to see that environmental elements I added like spatial audio and grid-based movement get praise from the judges. I worked with new software, Trenchbroom and Blender, adding to my Aseprite work from American Kaiju. This was a large step up for me. With Hungry, I made a small environment I could relax in, a vibe I carry to my future projects. </p>
+      </div>
     </div>
   </div>
 </div>

@@ -111,14 +111,14 @@ permalink: /projects/ob95
 
   @media (min-width: 48em) {
     .dd-hero-text {
-      left: 13rem;
+      left: 3rem;
       right: 1rem;
     }
   }
 
   @media (min-width: 64em) {
     .dd-hero-text {
-      left: 14rem;
+      left: 3rem;
       right: 1rem;
     }
   }

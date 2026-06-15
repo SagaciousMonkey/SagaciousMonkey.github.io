@@ -14,10 +14,6 @@ permalink: /fiction/interactive-fiction
     box-sizing: border-box;
   }
 
-  p {
-    text-indent: 50px;
-  }
-
   :root {
     --bg:        #0e0d0c;
     --surface:   #161412;
