@@ -511,6 +511,7 @@ layout: page
           </p>
         </div>
       </article>
+<!--
       <article class="port-card" id="card-third">
         <div class="port-media">
           <div class="port-placeholder">Image / Video</div>
@@ -524,6 +525,7 @@ layout: page
           </p>
           </div>
       </article>
+-->
 
     </div>
 
