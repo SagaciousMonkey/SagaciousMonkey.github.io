@@ -446,7 +446,7 @@ permalink: /projects/gj
     <div class="dd-media-block">
       <div class="dd-media-block-media">
         <img src="/assets/img/CCC2.png" alt="A big chicken monster destroying a city">
-        <span class="dd-caption">American Kaiju was designed to be a mix of Rampage and Donkey Kong Country- juggling physics-based movement and city destruction</span>
+        <span class="dd-caption">American Kaiju was designed to be a mix of Rampage and Donkey Kong Country- juggling physics-based movement and city destruction.</span>
       </div>
     <div class="dd-media-block-text">
         <h3 class="centered">American Kaiju: <i>HARDBOILED</i></h3>
@@ -460,7 +460,7 @@ permalink: /projects/gj
     <div class="dd-media-block flip">
       <div class="dd-media-block-media">
         <img src="/assets/img/shellshook.png" alt="A chicken stares ahead, now truly understanding the depths of loss.">
-        <span class="dd-caption">Had I ever truly lived before I studied how a chicken walks for three hours? Clearly my life was missing this essential experience</span>
+        <span class="dd-caption">Had I ever truly lived before I studied how a chicken walks for three hours? Clearly my life was missing this essential experience.</span>
       </div>
       <div class="dd-media-block-text">
         <p>American Kaiju, like most game jams, tested our teamwork, our ability to maintain consistency, and our confidence to commit to release. On the team, I was the jack-of-all-trades manager, and I oversaw programming, art, and the story. Giving our rooster kaiju protagonist a voice was a challenge, but I storyboarded intro and outro sequences that gave the experience flavor.</p>
@@ -470,11 +470,11 @@ permalink: /projects/gj
       <div class="dd-media-block">
       <div class="dd-media-block-media">
         <img src="/assets/img/ladyfingers.png" alt="A blue demon admits their love of collecting sweet biscuits.">
-        <span class="dd-caption">Retro game assets help keep the project focused. As always, I make all my own art.</span>
+        <span class="dd-caption">Retro game assets help keep the project focused and achievable.</span>
       </div>
     <div class="dd-media-block-text">
         <h3 class="centered">Hungry for a Biscuit</h3>
-        <p>After learning the skills I needed to publish a finished Godot game, I was eager to try again, so I pushed myself to do a solo game jam. I submitted Hungry for a Biscuit to the Brackeys Game Jam 2025.2, making the step from 2D to 3D. Hungry took the jam’s theme, “Risk it for the Biscuit,” to a far too literal level, but I had a blast making it. The game gave me the skills I wanted for other projects, like 3D environment work, and it also made me learn how to incorporate a “Soggy Meter.”</p>
+        <p>After learning the skills I needed to publish a finished Godot game, I was eager to try again, so I pushed myself to do a solo game jam. I submitted Hungry for a Biscuit to the Brackeys Game Jam 2025.2, making the step from 2D to 3D. Hungry took the jam’s theme, “Risk it for the Biscuit,” to a far too literal level, but I had a blast making it. The game is a small dungeon crawler, where you need to find a biscuit, dunk it into a mug of coffee, and then run it back to its owner before it dries back up. The game gave me the skills I wanted to add into future projects, like incorporating physics and adaptive UI.</p>
       </div>
     </div>
     <div class="dd-media-block flip">

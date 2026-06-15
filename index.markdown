@@ -505,7 +505,7 @@ layout: page
         </div>
         <div class="port-body">
           <span class="port-category">New Foundations</span>
-          <h2 class="port-card-title">Game Jams</h2>
+          <h2 class="port-card-title"><a href="/projects/gj">Game Jams</a></h2>
           <p class="port-desc">
             <i>Video Games; Twine, Unity and Godot.</i> Works published on Itch.io and personal projects. Chicken Kaiju, Biscuit-based Dungeon Crawlers, and an adventure through Hell.
           </p>
