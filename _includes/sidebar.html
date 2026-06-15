@@ -2,10 +2,7 @@
   <div class="sidebar-logo">
     <img src="{{ site.baseurl }}/assets/img/treeicon.png" alt="Avatar" class="avatar-icon">
   </div>
-
   <div class="container sidebar-sticky">
-    <div class="sidebar-header">
-      </div>
     <div class="sidebar-about">
       <h1>
         <a href="{{ site.baseurl }}">
@@ -14,7 +11,6 @@
       </h1>
       <p class="lead">Narrative Designer and Writer</p>
     </div>
-
     <nav class="sidebar-nav">
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
@@ -31,6 +27,17 @@
       {% endfor %}
     </nav>
     <br>
+  <div class="sidebar-contact">
+      <a href="https://www.linkedin.com/in/matthewjespinosa/">
+      <img src="{{ site.baseurl }}/assets/img/bluesky.png" alt="Icon" class="avatar-icon">
+      </a>
+      <a href="mailto:matthewjespinosa@gmail.com">
+      <img src="{{ site.baseurl }}/assets/img/mail.png" alt="Icon" class="avatar-icon">
+      </a>
+      <a href="https://itch.io/profile/sagaciousmonkey">
+      <img src="{{ site.baseurl }}/assets/img/controller.png" alt="Icon" class="avatar-icon">
+      </a>
+  </div>
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>
 </div>
