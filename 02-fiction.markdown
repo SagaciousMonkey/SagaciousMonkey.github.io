@@ -329,7 +329,7 @@ permalink: /fiction
     background: none;
     border: none;
     cursor: pointer;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Inconsolata'
     font-size: 0.68rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
