@@ -474,7 +474,9 @@ layout: page
     <div class="portfolio-grid">
       <article class="port-card" id="card-quest">
         <div class="port-media">
-            <img src="/assets/img/ETScroll.png"></video>
+          <a href="/projects/etr">
+          <img src="/assets/img/ETScroll.png">
+          </a>
           <span class="media-badge">World Design</span>
         </div>
         <div class="port-body">
@@ -487,7 +489,9 @@ layout: page
       </article>
       <article class="port-card" id="card-narrative">
         <div class="port-media">
+          <a href="/projects/ob95">
           <img src="/assets/img/OBVirus.JPEG">
+          </a>
           <span class="media-badge">Narrative Design</span>
         </div>
         <div class="port-body">
@@ -500,8 +504,9 @@ layout: page
       </article>
       <article class="port-card" id="card-third">
         <div class="port-media">
+          <a href="/projects/gj">
           <img src="/assets/img/CCC.png">
-          <span class="media-badge">Collaboration</span>
+          </a>
         </div>
         <div class="port-body">
           <span class="port-category">New Foundations</span>
