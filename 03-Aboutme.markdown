@@ -100,7 +100,7 @@ permalink: /about-me
 
 <div class="portfolio-grid">
   <div class="home-photo-cell">
-    <img src="/assets/img/mountainsandme.jpg" alt="">
+    <img src="/assets/img/spookytower.jpg" alt="">
     </div>
   <div class="home-photo-cell">
     <img src="/assets/img/WithPresh.JPEG" alt="">
@@ -119,6 +119,6 @@ permalink: /about-me
   <div class="home-buttons">
     <a class="home-btn" href="/projects">Projects</a>
     <a class="home-btn home-btn--ghost" href="/fiction">Fiction</a>
-    <a class="home-btn home-btn--ghost" href="/Resume">Resume</a>
+    <a class="home-btn home-btn--ghost" href="/resume">Resume</a>
   </div>
 </div>
