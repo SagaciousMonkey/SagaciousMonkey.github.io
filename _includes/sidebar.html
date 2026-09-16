@@ -9,14 +9,15 @@
           {{ site.title }}
         </a>
       </h1>
-      <p class="lead">Narrative Designer and Writer</p>
+      <p class="lead" style="color: white;">
+        Narrative Designer and Writer 
+      </p>
     </div>
     <nav class="sidebar-nav">
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
         `layout: page` in the front-matter. See readme for usage.
       {% endcomment %}
-
       {% assign pages_list = site.pages %}
       {% for node in pages_list %}
         {% if node.title != null %}

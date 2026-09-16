@@ -431,11 +431,23 @@ permalink: /projects/etr
       <div class="dd-media-block-text">
         <h3>Historical Research, Environment, Prop, and Puzzle Design</h3>
         <br>
+        <p style="color: white"><i>
+        Redesigned a room's final area to draw interest and heighten immersion, naturally decreasing hint requests where players had once stalled.
+        </i></p>
+        <br>
         <p>
         When Egyptian Tomb was first constructed, it was designed to excite players immediately as they entered. Atmospheric lighting with flickering electric torches, large altars with ornate hieroglyphic carvings, and three inches of sand along the floor all worked to hook players into an immersive experience.</p>
         <br>
         <p>In time, however, game masters began to realize a strange recurring pattern that players took in the room. When players reached the third room, they often would lose track and go back to the first and second rooms, where most of the budget had gone. Even though the third area required no backtracking, game masters would give many hints to keep players’ attention focused. It became clear that the third room lacked something to keep players engaged.</p>
       </div>
+    </div>
+        <div class="dd-pullquote">
+      <blockquote>
+        <p>
+        We did the Egyptian Tomb room, and it was so detailed. We have done many other escape rooms and none have been this immersive as far as decor and even the puzzles. (They) were so unique and unlike any escape room we've done in the past.
+        </p>
+        <cite>— Kayla Steele, Google Review</cite>
+      </blockquote>
     </div>
     <div class="dd-media-block flip">
       <div class="dd-media-block-media">
@@ -447,14 +459,6 @@ permalink: /projects/etr
         <br>
         <p>The Egyptian Tomb Redesign focused almost entirely on the third room. We edited the puzzles to be clearer, and we installed new tactile props with new puzzles. We repainted the walls a brilliant gold, and we coated them in ancient art, using icons from Sumerian cities, Göbekli Tepe, and other ancient locations. I took this opportunity to develop why the Ark of the Covenant would be found in an Egyptian Tomb- deciding that the Pharaoh who built the tomb was obsessed with collecting exotic art and materials.</p>
       </div>
-    </div>
-    <div class="dd-pullquote">
-      <blockquote>
-        <p>
-        We did the Egyptian Tomb room, and it was so detailed. We have done many other escape rooms and none have been this immersive as far as decor and even the puzzles. (They) were so unique and unlike any escape room we've done in the past.
-        </p>
-        <cite>— Kayla Steele, Google Review</cite>
-      </blockquote>
     </div>
     <div class="dd-media-block">
       <div class="dd-media-block-media">

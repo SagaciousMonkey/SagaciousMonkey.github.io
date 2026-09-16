@@ -433,6 +433,10 @@ permalink: /projects/ob95
       <div class="dd-media-block-text">
         <h3>Narrative, Environment, Prop, and Puzzle Design</h3>
         <br>
+        <p style="color: white"><i>
+        Rebuilt an underperforming room into a seasonal horror experience that sold out and replaced the original permanently. 
+        </i></p>
+        <br>
         <p>Outbreak was an older room, designed to be a CDC facility that housed a cure for an apocalyptic virus. It was a high difficulty game that appealed to experts, but lacked decoration. Marketing it was difficult, and it consistently underperformed. I pitched a Halloween variant- “Zombie” Outbreak. The negative space was covered with blood, the lighting was lowered, and the room’s soundtrack was replaced with a moody synthwave track. The room consistently sold out, a complete reversal of its previous performance.</p>
         <p>After two strong Halloweens, we decided to keep the room’s Zombie theme throughout the year. The name Outbreak ‘95 gave us a chance to add new elements that evoked the technological surge of the Nineties. Soon, we added a Gameboy game running on original hardware and a PC that ran a Python variant of the classic Eliza chatbot.</p>
       </div>
